@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>South Florida Personal Narrative Readiness Summit | GHN Communications</title>
+  <meta name="description" content="Join GHN Communications at the South Florida Personal Narrative Readiness Summit — June 2, 2026 at Alan B. Levan | NSU Broward Center of Innovation. Hands-on support for DBE/ACDBE business owners navigating reevaluation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1e293b;
+      background: #fff;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4, h5 { font-family: 'Montserrat', sans-serif; line-height: 1.2; }
+
+    /* ── Tokens ── */
+    :root {
+      --navy:      #0b2545;
+      --navy-mid:  #1a3a6b;
+      --navy-dark: #071830;
+      --gold:      #c8922a;
+      --gold-lt:   #e8aa44;
+      --blue:      #1a56db;
+      --gray-50:   #f8fafc;
+      --gray-100:  #f1f5f9;
+      --gray-200:  #e2e8f0;
+      --gray-500:  #64748b;
+      --gray-600:  #475569;
+    }
+
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+    [id] { scroll-margin-top: 80px; }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 6px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; font-size: 0.88rem;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: all 0.18s ease; white-space: nowrap;
+    }
+    .btn-gold  { background: var(--gold); color: var(--navy); }
+    .btn-gold:hover  { background: var(--gold-lt); transform: translateY(-1px); box-shadow: 0 6px 18px rgba(200,146,42,.38); }
+    .btn-ghost { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.65); }
+    .btn-ghost:hover { background: rgba(255,255,255,.12); border-color: #fff; }
+    .btn-navy  { background: var(--navy); color: #fff; }
+    .btn-navy:hover  { background: var(--navy-mid); transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+    .btn-outline:hover { background: var(--navy); color: #fff; }
+    .btn-lg { padding: 1rem 2.25rem; font-size: 0.95rem; }
+
+    /* ══════════ NAV ══════════ */
+    .site-nav {
+      position: sticky; top: 0; z-index: 200;
+      background: var(--navy);
+      height: 70px;
+      display: flex; align-items: center;
+      padding: 0 2rem;
+      justify-content: space-between;
+      box-shadow: 0 2px 12px rgba(0,0,0,.3);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+    .logo-badge {
+      width: 42px; height: 42px;
+      background: var(--gold); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800; font-size: 1rem;
+      color: var(--navy); letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+    .logo-copy { display: flex; flex-direction: column; line-height: 1.1; }
+    .logo-copy .l-main { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1rem; color: #fff; letter-spacing: 2px; }
+    .logo-copy .l-sub  { font-family: 'Montserrat', sans-serif; font-size: 0.55rem; font-weight: 600; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; }
+    .nav-back {
+      color: rgba(255,255,255,.7);
+      font-size: 0.82rem; font-weight: 500;
+      text-decoration: none;
+      display: flex; align-items: center; gap: 0.4rem;
+      padding: 0.4rem 0.8rem; border-radius: 4px;
+      transition: all 0.15s;
+    }
+    .nav-back:hover { color: #fff; background: rgba(255,255,255,.1); }
+
+    /* ══════════ EVENT HERO ══════════ */
+    .event-hero {
+      background: linear-gradient(135deg, #071830 0%, #0b2545 45%, #153d78 100%);
+      padding: 5rem 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .event-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 80% 30%, rgba(200,146,42,.1) 0%, transparent 50%),
+        radial-gradient(circle at 15% 70%, rgba(26,86,219,.08) 0%, transparent 40%);
+    }
+    .event-hero::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h4v4H0zm8 0h4v4H8zm8 0h4v4h-4zm8 0h4v4h-4zm8 0h4v4h-4zm8 0h4v4h-4zm8 0h4v4h-4zm8 0h4v4h-4z' fill='%23ffffff' fill-opacity='0.022'/%3E%3C/svg%3E");
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative; z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+      align-items: end;
+      padding-bottom: 0;
+    }
+    .hero-text { padding-bottom: 3.5rem; }
+    .event-type-pill {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      background: rgba(200,146,42,.18);
+      border: 1px solid rgba(200,146,42,.5);
+      color: var(--gold);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      padding: 0.42rem 1rem; border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+    .event-hero h1 {
+      font-size: clamp(1.9rem, 3.5vw, 2.85rem);
+      color: #fff; font-weight: 800;
+      max-width: 680px;
+      margin-bottom: 1.5rem;
+    }
+    .event-hero h1 .accent { color: var(--gold); }
+    .event-meta {
+      display: flex; flex-direction: column; gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+    .meta-row {
+      display: flex; align-items: flex-start; gap: 0.65rem;
+      font-size: 0.95rem; color: rgba(255,255,255,.82);
+    }
+    .meta-icon { font-size: 1.05rem; flex-shrink: 0; margin-top: 0.05rem; }
+    .meta-row strong { color: #fff; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+    /* Register card */
+    .register-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 2.25rem 2rem;
+      width: 300px;
+      flex-shrink: 0;
+      align-self: end;
+      margin-bottom: -2px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.28);
+      position: relative; z-index: 2;
+    }
+    .reg-card-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.65rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 2px;
+      color: var(--gold); margin-bottom: 0.6rem;
+    }
+    .reg-card-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.25rem; font-weight: 800;
+      color: var(--navy); margin-bottom: 0.3rem;
+    }
+    .reg-card-date {
+      font-size: 0.88rem; color: var(--gray-500);
+      margin-bottom: 1.25rem;
+    }
+    .reg-divider { border: none; border-top: 1px solid var(--gray-200); margin: 1.25rem 0; }
+    .reg-detail {
+      display: flex; align-items: flex-start; gap: 0.55rem;
+      font-size: 0.83rem; color: var(--gray-600);
+      margin-bottom: 0.65rem;
+    }
+    .reg-detail .icon { flex-shrink: 0; }
+    .reg-card .btn { width: 100%; margin-top: 1.25rem; }
+    .reg-note {
+      font-size: 0.75rem; color: var(--gray-500);
+      text-align: center; margin-top: 0.75rem;
+      line-height: 1.45;
+    }
+
+    /* ══════════ WAVE DIVIDER ══════════ */
+    .wave-divider {
+      display: block;
+      width: 100%;
+      height: 60px;
+      background: var(--navy);
+      clip-path: ellipse(55% 100% at 50% 0%);
+      margin-bottom: -2px;
+    }
+
+    /* ══════════ ABOUT ══════════ */
+    .section-about {
+      padding: 5rem 2rem;
+      background: #fff;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .section-label {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.65rem;
+    }
+    .section-title {
+      font-size: clamp(1.6rem, 2.8vw, 2.25rem);
+      color: var(--navy); margin-bottom: 1rem;
+    }
+    .about-body p {
+      font-size: 0.97rem; color: var(--gray-600);
+      line-height: 1.75; margin-bottom: 1rem;
+    }
+    .about-body p:last-child { margin-bottom: 0; }
+
+    /* Session structure */
+    .structure-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem; font-weight: 700;
+      color: var(--navy); margin-bottom: 1rem;
+    }
+    .session-block {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: 10px;
+      padding: 1.4rem;
+      margin-bottom: 0.85rem;
+      position: relative;
+      padding-left: 1.4rem;
+      border-left: 4px solid var(--gold);
+    }
+    .session-block h4 {
+      font-size: 0.95rem; color: var(--navy);
+      margin-bottom: 0.3rem;
+    }
+    .session-block p {
+      font-size: 0.83rem; color: var(--gray-600);
+      line-height: 1.6;
+    }
+    .session-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.65rem; font-weight: 700;
+      color: var(--gold); text-transform: uppercase;
+      letter-spacing: 1.5px; margin-bottom: 0.3rem;
+    }
+
+    /* ══════════ WHO SHOULD ATTEND ══════════ */
+    .section-attend {
+      padding: 5rem 2rem;
+      background: var(--gray-50);
+    }
+    .attend-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2.25rem;
+    }
+    .attend-card {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .attend-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 4px 16px rgba(200,146,42,.12);
+    }
+    .attend-icon { font-size: 1.6rem; margin-bottom: 0.65rem; }
+    .attend-card h4 {
+      font-size: 0.95rem; color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+    .attend-card p {
+      font-size: 0.82rem; color: var(--gray-600); line-height: 1.55;
+    }
+
+    /* ══════════ WHAT YOU'LL GAIN ══════════ */
+    .section-gain {
+      padding: 5rem 2rem;
+      background: var(--navy);
+    }
+    .gain-hd { margin-bottom: 2.5rem; }
+    .gain-hd .section-label { color: var(--gold); }
+    .gain-hd h2 { color: #fff; font-size: clamp(1.6rem, 2.8vw, 2.15rem); }
+    .gain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+    .gain-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: all 0.2s;
+    }
+    .gain-card:hover { background: rgba(255,255,255,.1); border-color: rgba(200,146,42,.35); }
+    .gain-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem; font-weight: 800;
+      color: var(--gold); margin-bottom: 0.35rem;
+    }
+    .gain-card h4 { font-size: 0.95rem; color: #fff; margin-bottom: 0.4rem; }
+    .gain-card p { font-size: 0.82rem; color: rgba(255,255,255,.62); line-height: 1.55; }
+
+    /* ══════════ VENUE ══════════ */
+    .section-venue {
+      padding: 5rem 2rem;
+      background: #fff;
+    }
+    .venue-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+      margin-top: 2.25rem;
+    }
+    .venue-info h3 {
+      font-size: 1.3rem; color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .venue-detail {
+      display: flex; align-items: flex-start; gap: 0.65rem;
+      font-size: 0.9rem; color: var(--gray-600);
+      margin-bottom: 0.75rem;
+    }
+    .venue-detail .vi { flex-shrink: 0; font-size: 1.1rem; margin-top: 0.05rem; }
+    .venue-map {
+      background: var(--gray-100);
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gray-500);
+      font-size: 0.85rem;
+      border: 1px solid var(--gray-200);
+      text-align: center;
+      padding: 2rem;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .venue-map .map-icon { font-size: 2.5rem; }
+
+    /* ══════════ REGISTER ══════════ */
+    .section-register {
+      padding: 5.5rem 2rem;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .section-register::before {
+      content: '';
+      position: absolute;
+      top: -100px; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(200,146,42,.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .register-inner { max-width: 600px; margin: 0 auto; position: relative; z-index: 1; }
+    .register-inner h2 { color: #fff; font-size: clamp(1.75rem, 3vw, 2.25rem); margin-bottom: 0.85rem; }
+    .register-inner p { color: rgba(255,255,255,.72); font-size: 0.97rem; line-height: 1.7; margin-bottom: 2rem; }
+    .reg-btns { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+    .reg-fine { font-size: 0.78rem; color: rgba(255,255,255,.38); margin-top: 1.5rem; }
+
+    /* ══════════ FOOTER ══════════ */
+    .site-footer {
+      background: var(--navy-dark);
+      padding: 3rem 2rem 2rem;
+    }
+    .footer-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .footer-col h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.65rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 2px;
+      color: var(--gold); margin-bottom: 1rem;
+    }
+    .footer-col a, .footer-col p {
+      display: block;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      margin-bottom: 0.38rem;
+      transition: color 0.15s;
+    }
+    .footer-col a:hover { color: var(--gold); }
+    .footer-tagline { font-size: 0.82rem; color: rgba(255,255,255,.42); line-height: 1.65; margin-top: 0.9rem; }
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 1.5rem auto 0;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 0.75rem;
+    }
+    .footer-copy { font-size: 0.74rem; color: rgba(255,255,255,.26); }
+    .produced-by {
+      display: flex; align-items: center; gap: 0.55rem;
+      font-size: 0.7rem; color: rgba(255,255,255,.28);
+    }
+    .produced-logo { display: flex; align-items: center; gap: 0.38rem; }
+    .pb-mark {
+      width: 24px; height: 24px;
+      background: var(--gold); border-radius: 3px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.55rem; font-weight: 800;
+      color: var(--navy);
+    }
+    .pb-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.62rem; font-weight: 700;
+      color: rgba(255,255,255,.45);
+      letter-spacing: 1.5px;
+    }
+
+    /* ══════════ RESPONSIVE ══════════ */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .register-card { width: 100%; max-width: 380px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .venue-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .event-hero { padding: 3.5rem 1.25rem 0; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════ NAV ══════════ -->
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo" aria-label="GHN Communications – Home">
+    <div class="logo-badge">GHN</div>
+    <div class="logo-copy">
+      <span class="l-main">GHN</span>
+      <span class="l-sub">Communications</span>
+    </div>
+  </a>
+  <a href="index.html" class="nav-back">← Back to Readiness Hub</a>
+</nav>
+
+<!-- ══════════ EVENT HERO ══════════ -->
+<section class="event-hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="event-type-pill">📍 In-Person Event &nbsp;·&nbsp; South Florida</span>
+      <h1>South Florida<br /><span class="accent">Personal Narrative</span><br />Readiness Summit</h1>
+      <div class="event-meta">
+        <div class="meta-row">
+          <span class="meta-icon">📅</span>
+          <span><strong>June 2, 2026</strong></span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-icon">📍</span>
+          <span><strong>Alan B. Levan | NSU Broward Center of Innovation</strong><br />Fort Lauderdale, Florida</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-icon">👥</span>
+          <span>Small-group intensive working sessions — limited capacity</span>
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#register" class="btn btn-gold btn-lg">Register Now</a>
+        <a href="#about"    class="btn btn-ghost">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Register card -->
+    <div class="register-card">
+      <div class="reg-card-label">Event Registration</div>
+      <div class="reg-card-title">Readiness Summit</div>
+      <div class="reg-card-date">June 2, 2026 &nbsp;·&nbsp; Fort Lauderdale, FL</div>
+      <hr class="reg-divider" />
+      <div class="reg-detail">
+        <span class="icon">📍</span>
+        <span>Alan B. Levan | NSU Broward Center of Innovation, Fort Lauderdale, FL</span>
+      </div>
+      <div class="reg-detail">
+        <span class="icon">📅</span>
+        <span>June 2, 2026</span>
+      </div>
+      <div class="reg-detail">
+        <span class="icon">👥</span>
+        <span>Small-group intensive format — seats are limited</span>
+      </div>
+      <div class="reg-detail">
+        <span class="icon">✅</span>
+        <span>DBE/ACDBE business owners navigating reevaluation</span>
+      </div>
+      <a href="mailto:admin@ghncomms.com?subject=South%20Florida%20Summit%20Registration%20-%20June%202%2C%202026"
+         class="btn btn-gold">Reserve Your Spot</a>
+      <p class="reg-note">Contact us at admin@ghncomms.com or call 856-278-2182 to confirm availability.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section class="section-about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+
+      <div class="about-body">
+        <span class="section-label">About the Summit</span>
+        <h2 class="section-title">Hands-On Readiness Support, Together</h2>
+        <p>
+          The South Florida Personal Narrative Readiness Summit is a facilitator-led, hands-on working
+          event designed to help DBE and ACDBE business owners develop their Personal Narrative,
+          organize supporting information, and improve reevaluation submission readiness through
+          practical, structured guidance.
+        </p>
+        <p>
+          Unlike a traditional seminar or webinar, this is a working session. Participants will leave
+          with a clearer narrative, organized supporting facts, and greater confidence about their
+          reevaluation submission — not just a better understanding of the process.
+        </p>
+        <p>
+          GHN Communications brings the same one-on-one strategic guidance methodology used in
+          individualized sessions into a small-group format — maximizing both the depth of support
+          and the breadth of peer learning.
+        </p>
+      </div>
+
+      <div>
+        <p class="structure-title">Summit Structure</p>
+
+        <div class="session-block">
+          <div class="session-num">Working Session 1</div>
+          <h4>Narrative Foundation &amp; Qualifying Event Development</h4>
+          <p>Guided small-group work to identify and structure the qualifying event, clarify the personal impediment, and establish the narrative foundation for your Personal Narrative.</p>
+        </div>
+
+        <div class="session-block">
+          <div class="session-num">Working Session 2</div>
+          <h4>Economic Impact &amp; Submission Readiness Review</h4>
+          <p>Deep dive into articulating the resulting economic impact, strengthening narrative clarity, and preparing your draft for submission — with direct facilitator feedback.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHO SHOULD ATTEND ══════════ -->
+<section class="section-attend" id="attend">
+  <div class="wrap">
+    <span class="section-label">Who Should Attend</span>
+    <h2 class="section-title">This Summit Is Designed For</h2>
+    <div class="attend-grid">
+
+      <div class="attend-card">
+        <div class="attend-icon">📄</div>
+        <h4>Business Owners Without a Draft</h4>
+        <p>If you have not yet begun writing your Personal Narrative, this summit will help you build from the ground up with structured facilitation.</p>
+      </div>
+
+      <div class="attend-card">
+        <div class="attend-icon">✏️</div>
+        <h4>Business Owners With an Early Draft</h4>
+        <p>If you have a rough draft but feel uncertain about structure, clarity, or completeness, the summit will help you strengthen and organize your narrative.</p>
+      </div>
+
+      <div class="attend-card">
+        <div class="attend-icon">❓</div>
+        <h4>Owners Unclear on Requirements</h4>
+        <p>If the new DOT Personal Narrative requirements feel confusing or overwhelming, the summit provides practical, plain-language guidance on what is needed and why.</p>
+      </div>
+
+      <div class="attend-card">
+        <div class="attend-icon">📋</div>
+        <h4>DBE &amp; ACDBE Certified Business Owners</h4>
+        <p>The summit is specifically designed for current DBE and ACDBE certified business owners navigating the reevaluation process under updated DOT requirements.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHAT YOU'LL GAIN ══════════ -->
+<section class="section-gain" id="outcomes">
+  <div class="wrap">
+    <div class="gain-hd">
+      <span class="section-label">What You Will Gain</span>
+      <h2>Leave With More Than Knowledge</h2>
+    </div>
+    <div class="gain-grid">
+
+      <div class="gain-card">
+        <div class="gain-num">01</div>
+        <h4>A Structured Qualifying Event</h4>
+        <p>Your qualifying event identified, framed, and structured in a way that supports a strong Personal Narrative.</p>
+      </div>
+
+      <div class="gain-card">
+        <div class="gain-num">02</div>
+        <h4>A Clearer Narrative Draft</h4>
+        <p>A more organized, clear, and complete narrative draft that reflects the depth and specificity the reevaluation process requires.</p>
+      </div>
+
+      <div class="gain-card">
+        <div class="gain-num">03</div>
+        <h4>Direct Facilitator Feedback</h4>
+        <p>Real-time, constructive feedback from an experienced GHN Communications facilitator in a small-group setting.</p>
+      </div>
+
+      <div class="gain-card">
+        <div class="gain-num">04</div>
+        <h4>Submission Readiness</h4>
+        <p>Greater confidence, clearer next steps, and a stronger foundation for your reevaluation submission.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ VENUE ══════════ -->
+<section class="section-venue" id="venue">
+  <div class="wrap">
+    <span class="section-label">Venue</span>
+    <h2 class="section-title">Event Location</h2>
+    <div class="venue-grid">
+
+      <div class="venue-info">
+        <h3>Alan B. Levan | NSU Broward Center of Innovation</h3>
+        <div class="venue-detail">
+          <span class="vi">📍</span>
+          <span>Alan B. Levan | NSU Broward Center of Innovation<br />Fort Lauderdale, Florida</span>
+        </div>
+        <div class="venue-detail">
+          <span class="vi">📅</span>
+          <span>Monday, June 2, 2026</span>
+        </div>
+        <div class="venue-detail">
+          <span class="vi">ℹ️</span>
+          <span>A state-of-the-art innovation hub at Nova Southeastern University, providing a professional, collaborative environment for focused working sessions.</span>
+        </div>
+        <div class="venue-detail">
+          <span class="vi">🚗</span>
+          <span>Parking available on-site. Detailed directions will be provided upon registration confirmation.</span>
+        </div>
+        <br />
+        <a href="mailto:admin@ghncomms.com?subject=Summit%20Venue%20Questions"
+           style="font-size:0.88rem; color:var(--blue); text-decoration:none; font-weight:600;">
+          Contact us for venue details →
+        </a>
+      </div>
+
+      <div class="venue-map">
+        <div class="map-icon">🗺️</div>
+        <p style="font-weight:600; color:#475569;">Alan B. Levan | NSU Broward Center of Innovation</p>
+        <p style="font-size:0.82rem; color:#64748b;">Fort Lauderdale, Florida</p>
+        <p style="font-size:0.78rem; color:#94a3b8; margin-top:0.5rem;">Detailed directions provided upon registration.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ REGISTER ══════════ -->
+<section class="section-register" id="register">
+  <div class="register-inner">
+    <span class="section-label" style="color:var(--gold); text-align:center; display:block;">Register</span>
+    <h2>Secure Your Spot at the Summit</h2>
+    <p>Space is limited to ensure every participant receives meaningful, hands-on support. Reserve your place today and take a concrete step toward reevaluation submission readiness.</p>
+    <div class="reg-btns">
+      <a href="mailto:admin@ghncomms.com?subject=South%20Florida%20Summit%20Registration%20-%20June%202%2C%202026"
+         class="btn btn-gold btn-lg">Reserve My Spot – Email Us</a>
+      <a href="tel:8562782182" class="btn btn-ghost">Call 856-278-2182</a>
+    </div>
+    <p class="reg-fine">GHN Communications Admin Team will confirm availability and provide all details. This is a limited-capacity event.</p>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <div class="footer-col">
+      <a href="index.html" class="nav-logo" style="text-decoration:none; display:flex; align-items:center; gap:0.7rem; margin-bottom:0.9rem;">
+        <div class="logo-badge">GHN</div>
+        <div class="logo-copy">
+          <span class="l-main">GHN</span>
+          <span class="l-sub">Communications</span>
+        </div>
+      </a>
+      <p class="footer-tagline">Strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Readiness Hub</h4>
+      <a href="index.html#session">Book Individualized Session</a>
+      <a href="index.html#webinar">Free Webinars</a>
+      <a href="index.html#events">In-Person Events</a>
+      <a href="index.html#resources">Resources</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>GHN Communications Admin Team</p>
+      <a href="mailto:admin@ghncomms.com">admin@ghncomms.com</a>
+      <a href="tel:8562782182">856-278-2182</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2026 GHN Communications. All rights reserved.</p>
+    <div class="produced-by">
+      Produced by
+      <div class="produced-logo">
+        <div class="pb-mark">GHN</div>
+        <span class="pb-name">GHN COMMUNICATIONS</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
