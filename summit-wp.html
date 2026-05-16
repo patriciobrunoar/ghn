@@ -1,0 +1,353 @@
+<!-- ════════════════════════════════════════════════════════════
+     GHN South Florida Summit — WordPress Block Version
+     Paste this entire file into a Custom HTML block.
+     Update any href="index.html" links to your actual WP page URL.
+════════════════════════════════════════════════════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+#ghn-summit *, #ghn-summit *::before, #ghn-summit *::after {
+  box-sizing: border-box; margin: 0; padding: 0;
+}
+:root {
+  --teal: #26485f; --teal-mid: #2d5573; --teal-dark: #101f28;
+  --accent: #2ea2cc; --accent-lt: #4db5d6;
+  --gray-50: #f8fafc; --gray-100: #f1f5f9; --gray-200: #e2e8f0;
+  --gray-500: #64748b; --gray-600: #475569;
+}
+#ghn-summit { font-family: 'Poppins','Inter',sans-serif; color: #101517; background: #fff; line-height: 1.6; overflow-x: hidden; }
+#ghn-summit h1, #ghn-summit h2, #ghn-summit h3, #ghn-summit h4, #ghn-summit h5 { font-family: 'Montserrat', sans-serif; line-height: 1.2; }
+#ghn-summit .wrap { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+#ghn-summit [id] { scroll-margin-top: 80px; }
+#ghn-summit .section-label { display: block; font-family: 'Montserrat',sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 0.65rem; }
+#ghn-summit .section-title { font-size: clamp(1.6rem,2.8vw,2.25rem); color: var(--teal); margin-bottom: 1rem; }
+
+/* Buttons */
+#ghn-summit .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; padding: 0.85rem 1.75rem; border-radius: 6px; font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 0.88rem; text-decoration: none; border: none; cursor: pointer; transition: all 0.18s ease; white-space: nowrap; }
+#ghn-summit .btn-accent { background: var(--accent); color: #fff; }
+#ghn-summit .btn-accent:hover { background: var(--accent-lt); transform: translateY(-1px); box-shadow: 0 6px 18px rgba(46,162,204,.38); }
+#ghn-summit .btn-ghost { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.65); }
+#ghn-summit .btn-ghost:hover { background: rgba(255,255,255,.12); border-color: #fff; }
+#ghn-summit .btn-teal { background: var(--teal); color: #fff; }
+#ghn-summit .btn-teal:hover { background: var(--teal-mid); transform: translateY(-1px); }
+#ghn-summit .btn-outline { background: transparent; color: var(--teal); border: 2px solid var(--teal); }
+#ghn-summit .btn-outline:hover { background: var(--teal); color: #fff; }
+#ghn-summit .btn-lg { padding: 1rem 2.25rem; font-size: 0.95rem; }
+
+/* NAV */
+#ghn-summit .site-nav { position: sticky; top: 0; z-index: 200; background: var(--teal-dark); height: 70px; display: flex; align-items: center; padding: 0 2rem; justify-content: space-between; box-shadow: 0 2px 12px rgba(0,0,0,.35); }
+#ghn-summit .nav-logo { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; }
+#ghn-summit .nav-logo img { height: 38px; width: auto; display: block; }
+#ghn-summit .nav-logo-text { font-family: 'Montserrat',sans-serif; font-size: 1rem; font-weight: 700; color: #fff; letter-spacing: 0.3px; white-space: nowrap; }
+#ghn-summit .nav-back { color: rgba(255,255,255,.7); font-family: 'Poppins',sans-serif; font-size: 0.82rem; font-weight: 500; text-decoration: none; display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.8rem; border-radius: 4px; transition: all 0.15s; }
+#ghn-summit .nav-back:hover { color: #fff; background: rgba(255,255,255,.1); }
+
+/* HERO */
+#ghn-summit .event-hero { background: linear-gradient(135deg,#101f28 0%,#26485f 45%,#1a3f5c 100%); padding: 5rem 2rem 4.5rem; position: relative; overflow: hidden; }
+#ghn-summit .event-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 80% 30%, rgba(46,162,204,.12) 0%, transparent 50%), radial-gradient(circle at 15% 70%, rgba(26,86,219,.08) 0%, transparent 40%); }
+#ghn-summit .event-hero::after { content: ''; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h4v4H0zm8 0h4v4H8zm8 0h4v4h-4zm8 0h4v4h-4zm8 0h4v4h-4zm8 0h4v4h-4zm8 0h4v4h-4zm8 0h4v4h-4z' fill='%23ffffff' fill-opacity='0.022'/%3E%3C/svg%3E"); }
+#ghn-summit .hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+#ghn-summit .event-type-pill { display: inline-flex; align-items: center; gap: 0.45rem; background: rgba(46,162,204,.18); border: 1px solid rgba(46,162,204,.5); color: var(--accent); font-family: 'Montserrat',sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; padding: 0.42rem 1rem; border-radius: 4px; margin-bottom: 1.25rem; }
+#ghn-summit .event-hero h1 { font-size: clamp(2rem,4vw,3rem); color: #fff; font-weight: 800; max-width: 720px; margin-bottom: 1.5rem; }
+#ghn-summit .event-hero h1 .accent { color: var(--accent); }
+#ghn-summit .event-meta { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 2rem; }
+#ghn-summit .meta-row { display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.95rem; color: rgba(255,255,255,.82); }
+#ghn-summit .meta-icon { font-size: 1.05rem; flex-shrink: 0; margin-top: 0.05rem; }
+#ghn-summit .meta-row strong { color: #fff; }
+#ghn-summit .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* WHO SHOULD ATTEND */
+#ghn-summit .section-attend { padding: 5rem 2rem; background: #fff; }
+#ghn-summit .attend-body { max-width: 800px; }
+#ghn-summit .attend-body p { font-size: 0.97rem; color: var(--gray-600); line-height: 1.75; }
+
+/* WHAT TO EXPECT */
+#ghn-summit .section-expect { padding: 5rem 2rem; background: var(--gray-50); }
+#ghn-summit .expect-body { max-width: 800px; }
+#ghn-summit .expect-body p { font-size: 0.97rem; color: var(--gray-600); line-height: 1.75; margin-bottom: 1rem; }
+#ghn-summit .expect-body p:last-child { margin-bottom: 0; }
+#ghn-summit .expect-outcomes { margin-top: 1.5rem; background: #fff; border: 1px solid var(--gray-200); border-radius: 10px; padding: 1.5rem 1.75rem; border-left: 4px solid var(--accent); }
+#ghn-summit .expect-outcomes p { font-family: 'Montserrat',sans-serif; font-size: 0.82rem; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.75rem; }
+#ghn-summit .expect-outcomes ul { list-style: none; }
+#ghn-summit .expect-outcomes ul li { font-size: 0.88rem; color: var(--gray-600); padding: 0.28rem 0 0.28rem 1.4rem; position: relative; }
+#ghn-summit .expect-outcomes ul li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+/* SESSION REGISTRATION */
+#ghn-summit .section-registration { padding: 5rem 2rem; background: #fff; }
+#ghn-summit .reg-intro { font-size: 0.97rem; color: var(--gray-600); line-height: 1.7; margin-bottom: 2rem; max-width: 720px; }
+#ghn-summit .session-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+#ghn-summit .session-reg-card { border: 1px solid var(--gray-200); border-radius: 12px; padding: 2rem; background: var(--gray-50); display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s; }
+#ghn-summit .session-reg-card:hover { border-color: var(--accent); box-shadow: 0 6px 20px rgba(46,162,204,.14); }
+#ghn-summit .session-reg-card .group-label { font-family: 'Montserrat',sans-serif; font-size: 0.68rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem; }
+#ghn-summit .session-reg-card h3 { font-size: 1.1rem; color: var(--teal); margin-bottom: 0.5rem; }
+#ghn-summit .session-reg-card .time-badge { display: inline-block; background: var(--teal); color: #fff; font-family: 'Montserrat',sans-serif; font-size: 0.78rem; font-weight: 700; padding: 0.3rem 0.75rem; border-radius: 4px; margin-bottom: 1rem; }
+#ghn-summit .session-reg-card p { font-size: 0.85rem; color: var(--gray-500); margin-bottom: 1.5rem; flex: 1; }
+#ghn-summit .session-reg-card .seats { font-family: 'Montserrat',sans-serif; font-size: 0.72rem; font-weight: 700; color: var(--gray-500); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.25rem; }
+#ghn-summit .session-reg-card .seats span { color: var(--teal); }
+#ghn-summit .session-reg-card .btn { width: 100%; }
+
+/* AGENDA */
+#ghn-summit .section-agenda { padding: 5rem 2rem; background: var(--gray-50); }
+#ghn-summit .agenda-group { margin-bottom: 3rem; }
+#ghn-summit .agenda-group:last-child { margin-bottom: 0; }
+#ghn-summit .agenda-group-title { font-family: 'Montserrat',sans-serif; font-size: 1rem; font-weight: 800; color: #fff; background: var(--teal); padding: 0.75rem 1.25rem; border-radius: 6px; margin-bottom: 0; display: inline-block; }
+#ghn-summit .agenda-group-shared { font-family: 'Montserrat',sans-serif; font-size: 0.8rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; text-align: center; margin: 2.5rem 0 0.75rem; }
+#ghn-summit .agenda-table { width: 100%; border-collapse: collapse; }
+#ghn-summit .agenda-table tr { border-bottom: 1px solid var(--gray-200); }
+#ghn-summit .agenda-table tr:last-child { border-bottom: none; }
+#ghn-summit .agenda-time { width: 160px; padding: 1.1rem 1.25rem; font-family: 'Montserrat',sans-serif; font-size: 0.78rem; font-weight: 700; color: var(--teal); vertical-align: top; white-space: nowrap; background: #fff; }
+#ghn-summit .agenda-content { padding: 1.1rem 1.25rem; vertical-align: top; background: #fff; }
+#ghn-summit .agenda-content strong { display: block; font-family: 'Montserrat',sans-serif; font-size: 0.9rem; color: var(--teal-dark); margin-bottom: 0.3rem; }
+#ghn-summit .agenda-content p { font-size: 0.85rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 0.5rem; }
+#ghn-summit .agenda-content p:last-child { margin-bottom: 0; }
+#ghn-summit .agenda-content ul { list-style: none; margin-top: 0.5rem; }
+#ghn-summit .agenda-content ul li { font-size: 0.83rem; color: var(--gray-600); padding: 0.2rem 0 0.2rem 1.3rem; position: relative; }
+#ghn-summit .agenda-content ul li::before { content: '•'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+#ghn-summit .agenda-content ul ul { margin-left: 1.25rem; }
+#ghn-summit .agenda-content ul ul li::before { content: '–'; color: var(--gray-500); }
+
+/* SELECT SESSION CTA */
+#ghn-summit .section-select { padding: 5.5rem 2rem; background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%); text-align: center; position: relative; overflow: hidden; }
+#ghn-summit .section-select::before { content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(46,162,204,.12) 0%, transparent 65%); pointer-events: none; }
+#ghn-summit .select-inner { max-width: 700px; margin: 0 auto; position: relative; z-index: 1; }
+#ghn-summit .select-inner h2 { color: #fff; font-size: clamp(1.75rem,3vw,2.25rem); margin-bottom: 0.75rem; }
+#ghn-summit .select-inner > p { color: rgba(255,255,255,.72); font-size: 0.97rem; line-height: 1.7; margin-bottom: 2.25rem; }
+#ghn-summit .select-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 2rem; }
+#ghn-summit .select-card { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); border-radius: 10px; padding: 1.5rem; text-align: left; transition: all 0.2s; }
+#ghn-summit .select-card:hover { background: rgba(255,255,255,.13); border-color: rgba(46,162,204,.4); }
+#ghn-summit .select-card .sc-label { font-family: 'Montserrat',sans-serif; font-size: 0.65rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.4rem; }
+#ghn-summit .select-card .sc-time { font-family: 'Montserrat',sans-serif; font-size: 0.92rem; font-weight: 700; color: #fff; margin-bottom: 1rem; }
+#ghn-summit .select-card .btn { width: 100%; }
+#ghn-summit .select-note { font-size: 0.78rem; color: rgba(255,255,255,.38); }
+
+/* FOOTER */
+#ghn-summit .site-footer { background: var(--teal-dark); padding: 3.5rem 2rem 2rem; }
+#ghn-summit .footer-disclaimer { max-width: 1100px; margin: 0 auto; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+#ghn-summit .footer-disclaimer-label { font-family: 'Montserrat',sans-serif; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent); margin-bottom: 0.9rem; }
+#ghn-summit .footer-disclaimer-body { font-size: 0.8rem; color: rgba(255,255,255,.42); line-height: 1.75; }
+#ghn-summit .footer-disclaimer-body p + p { margin-top: 0.65rem; }
+#ghn-summit .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+#ghn-summit .footer-logo { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem; text-decoration: none; }
+#ghn-summit .footer-logo img { height: 34px; width: auto; flex-shrink: 0; }
+#ghn-summit .footer-logo-text { font-family: 'Montserrat',sans-serif; font-size: 0.88rem; font-weight: 700; color: rgba(255,255,255,.8); white-space: nowrap; }
+#ghn-summit .footer-tagline { font-size: 0.82rem; color: rgba(255,255,255,.42); line-height: 1.65; margin-bottom: 1.25rem; }
+#ghn-summit .footer-social { display: flex; gap: 0.65rem; }
+#ghn-summit .social-link { width: 34px; height: 34px; border-radius: 6px; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 0.85rem; color: rgba(255,255,255,.6); transition: background 0.15s, color 0.15s; }
+#ghn-summit .social-link:hover { background: var(--accent); color: #fff; }
+#ghn-summit .footer-col h4 { font-family: 'Montserrat',sans-serif; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 1rem; }
+#ghn-summit .footer-col a, #ghn-summit .footer-col p { display: block; font-size: 0.83rem; color: rgba(255,255,255,.55); text-decoration: none; margin-bottom: 0.38rem; transition: color 0.15s; line-height: 1.5; }
+#ghn-summit .footer-col a:hover { color: var(--accent); }
+#ghn-summit .footer-certs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+#ghn-summit .cert-badge { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.55); font-family: 'Montserrat',sans-serif; font-size: 0.58rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 0.2rem 0.5rem; border-radius: 3px; }
+#ghn-summit .footer-bottom { max-width: 1100px; margin: 1.5rem auto 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; }
+#ghn-summit .footer-copy { font-size: 0.74rem; color: rgba(255,255,255,.26); }
+#ghn-summit .footer-credit { font-size: 0.72rem; color: rgba(255,255,255,.26); }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  #ghn-summit .session-cards { grid-template-columns: 1fr; }
+  #ghn-summit .select-cards { grid-template-columns: 1fr; }
+  #ghn-summit .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  #ghn-summit .agenda-time { width: 100px; font-size: 0.7rem; }
+  #ghn-summit .footer-grid { grid-template-columns: 1fr; }
+  #ghn-summit .footer-bottom { flex-direction: column; text-align: center; }
+}
+</style>
+
+<div id="ghn-summit">
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <!-- TODO: Replace href="/" with your actual WP Readiness Hub page URL -->
+    <a href="/" class="nav-logo" aria-label="GHN Communications – Home">
+      <img src="https://i0.wp.com/ghncomms.com/wp-content/uploads/2023/01/White-GHN-Communications-logonew.png" alt="GHN Communications" />
+      <span class="nav-logo-text">GHN Communications</span>
+    </a>
+    <a href="/" class="nav-back">← Back to Readiness Hub</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="event-hero">
+    <div class="hero-inner">
+      <span class="event-type-pill">📍 In-Person Event &nbsp;·&nbsp; South Florida</span>
+      <h1>South Florida <span class="accent">Personal Narrative</span> Readiness Summit</h1>
+      <div class="event-meta">
+        <div class="meta-row"><span class="meta-icon">📅</span><span><strong>June 02, 2026</strong> &nbsp;·&nbsp; Davie, FL</span></div>
+        <div class="meta-row"><span class="meta-icon">📍</span><span><strong>Alan B. Levan | NSU Broward Center of Innovation</strong><br />3100 Ray Ferrero Jr Blvd, 5th Floor &nbsp;·&nbsp; Davie, FL 33314</span></div>
+        <div class="meta-row"><span class="meta-icon">👥</span><span>Small-group intensive working sessions — limited to 10 seats per group</span></div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#select-session" class="btn btn-accent btn-lg">Register Now</a>
+        <a href="#who-should-attend" class="btn btn-ghost">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO SHOULD ATTEND -->
+  <section class="section-attend" id="who-should-attend">
+    <div class="wrap">
+      <span class="section-label">Who Should Attend</span>
+      <h2 class="section-title">Designed for South Florida DBE/ACDBE Business Owners</h2>
+      <div class="attend-body">
+        <p>This summit is designed specifically for South Florida DBE/ACDBE business owners who have not yet completed or submitted their reevaluation and need practical support developing their Personal Narrative (PN).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT TO EXPECT -->
+  <section class="section-expect" id="what-to-expect">
+    <div class="wrap">
+      <span class="section-label">What to Expect</span>
+      <h2 class="section-title">A Hands-On Working Environment</h2>
+      <div class="expect-body">
+        <p>The Personal Narrative Readiness Summit provides a hands-on working environment for DBE/ACDBE business owners who have not yet structured their Personal Narrative or need guided, step-by-step development support.</p>
+        <p>Participants will work through how to identify and structure the qualifying event, clarify the impediment, articulate the resulting economic impact, and develop a clear, organized Personal Narrative draft.</p>
+        <div class="expect-outcomes">
+          <p>Participants Leave With</p>
+          <ul>
+            <li>A Personal Narrative draft</li>
+            <li>An action checklist</li>
+            <li>Clear next steps to continue refining their Personal Narrative for submission readiness</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SESSION REGISTRATION -->
+  <section class="section-registration" id="registration">
+    <div class="wrap">
+      <span class="section-label">Session Registration</span>
+      <h2 class="section-title">Select Your Working Session</h2>
+      <p class="reg-intro">Participants must register for one preferred session. Each session is limited to 10 business owners to allow for guided, hands-on support.</p>
+      <div class="session-cards">
+        <div class="session-reg-card">
+          <div class="group-label">Working Session Group 1</div>
+          <h3>Morning Session</h3>
+          <div class="time-badge">8:00 AM – 12:00 PM</div>
+          <p>Join the morning cohort for registration, breakfast, networking, and a full Personal Narrative Development Intensive.</p>
+          <div class="seats">Capacity: <span>10 seats</span></div>
+          <a href="#select-session" class="btn btn-accent">Register – Group 1</a>
+        </div>
+        <div class="session-reg-card">
+          <div class="group-label">Working Session Group 2</div>
+          <h3>Afternoon Session</h3>
+          <div class="time-badge">11:00 AM – 2:30 PM</div>
+          <p>Join the afternoon cohort for networking lunch registration followed by a full Personal Narrative Development Intensive.</p>
+          <div class="seats">Capacity: <span>10 seats</span></div>
+          <a href="#select-session" class="btn btn-teal">Register – Group 2</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDA -->
+  <section class="section-agenda" id="agenda">
+    <div class="wrap">
+      <span class="section-label">Program</span>
+      <h2 class="section-title">Full Day Agenda</h2>
+
+      <div class="agenda-group">
+        <div class="agenda-group-title">Working Session Group 1</div>
+        <table class="agenda-table"><tbody>
+          <tr><td class="agenda-time">8:00am – 8:40am</td><td class="agenda-content"><strong>Registration, Breakfast &amp; Networking</strong><p>Participants begin the morning with networking and informal discussion with fellow South Florida DBE/ACDBE business owners before the formal summit program begins.</p></td></tr>
+          <tr><td class="agenda-time">8:40am – 9:00am</td><td class="agenda-content"><strong>Welcome Remarks &amp; Summit Overview</strong><p>Opening remarks and overview of the summit objectives, structure, and participant experience for the day.</p></td></tr>
+          <tr><td class="agenda-time">9:00am – 11:00am</td><td class="agenda-content"><strong>Personal Narrative Development Intensive</strong><p>Business owners move from uncertainty to submission readiness.</p><ul><li>The current challenge DBE/ACDBE business owners are facing</li><li>What strengthens and weakens a Personal Narrative</li><li>Communication and storytelling fundamentals</li><li>Common mistakes and avoidable gaps</li><li>Let's Draft: Guided Development Exercises<ul><li>Guided narrative-structuring exercises using practical examples</li><li>Guided fact worksheet exercise to organize key story elements</li><li>AI-supported framework exercises for Personal Narrative draft development</li></ul></li><li>Q&amp;A and next steps</li></ul></td></tr>
+        </tbody></table>
+      </div>
+
+      <p class="agenda-group-shared">Group 1 &amp; Group 2</p>
+      <div class="agenda-group">
+        <table class="agenda-table"><tbody>
+          <tr><td class="agenda-time">11:00am – 12:00pm</td><td class="agenda-content"><strong>Networking Lunch &amp; Registration</strong><p>Working Session Group 1 participants transition to networking lunch while Working Session Group 2 participants arrive, register, and join the networking lunch prior to the afternoon programming.</p></td></tr>
+          <tr><td class="agenda-time">12:00pm – 12:15pm</td><td class="agenda-content"><strong>Transition Between Groups</strong><p>Conclusion of Working Session Group 1 and commencement of Working Session Group 2, including welcome remarks and a brief overview of the afternoon session.</p></td></tr>
+        </tbody></table>
+      </div>
+
+      <div class="agenda-group">
+        <div class="agenda-group-title">Working Session Group 2</div>
+        <table class="agenda-table"><tbody>
+          <tr><td class="agenda-time">12:15pm – 2:30pm</td><td class="agenda-content"><strong>Personal Narrative Development Intensive</strong><p>Business owners move from uncertainty to submission readiness.</p><ul><li>The current challenge DBE/ACDBE business owners are facing</li><li>What strengthens and weakens a Personal Narrative</li><li>Communication and storytelling fundamentals</li><li>Common mistakes and avoidable gaps</li><li>Let's Draft: Guided Development Exercises<ul><li>Guided narrative-structuring exercises using practical examples</li><li>Guided fact worksheet exercise to organize key story elements</li><li>AI-supported framework exercises for Personal Narrative draft development</li></ul></li><li>Q&amp;A, next steps and closing remarks</li></ul></td></tr>
+        </tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECT SESSION CTA -->
+  <section class="section-select" id="select-session">
+    <div class="select-inner">
+      <span class="section-label" style="color:var(--accent); text-align:center; display:block;">Register</span>
+      <h2>Select Your Preferred Working Session</h2>
+      <p>Space is limited to 10 participants per session to ensure every participant receives meaningful, hands-on support. Reserve your place today.</p>
+      <div class="select-cards">
+        <div class="select-card">
+          <div class="sc-label">Working Session Group 1</div>
+          <div class="sc-time">8:00 AM – 12:15 PM</div>
+          <a href="mailto:admin@ghncomms.com?subject=Summit%20Registration%20-%20Group%201%20-%20June%202%2C%202026" class="btn btn-accent">Register – Group 1</a>
+        </div>
+        <div class="select-card">
+          <div class="sc-label">Working Session Group 2</div>
+          <div class="sc-time">11:00 AM – 2:40 PM</div>
+          <a href="mailto:admin@ghncomms.com?subject=Summit%20Registration%20-%20Group%202%20-%20June%202%2C%202026" class="btn btn-ghost">Register – Group 2</a>
+        </div>
+      </div>
+      <p class="select-note">Registration links coming soon. Email admin@ghncomms.com or call 856-278-2182 to confirm your spot.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-disclaimer">
+      <div class="footer-disclaimer-label">Important Disclaimer</div>
+      <div class="footer-disclaimer-body">
+        <p>GHN Communications is an independent strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement. GHN Communications is not affiliated with, endorsed by, or acting on behalf of any federal, state, or local government agency.</p>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <!-- TODO: Replace href="/" with your WP Readiness Hub page URL -->
+        <a href="/" class="footer-logo" aria-label="GHN Communications">
+          <img src="https://i0.wp.com/ghncomms.com/wp-content/uploads/2023/01/White-GHN-Communications-logonew.png" alt="GHN Communications" />
+          <span class="footer-logo-text">GHN Communications</span>
+        </a>
+        <p class="footer-tagline">Strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/ghncomms/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">f</a>
+          <a href="https://www.linkedin.com/company/ghn-communications" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com/ghncomms/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Readiness Hub</h4>
+        <!-- TODO: Replace /readiness-hub/ with your actual WP page URLs -->
+        <a href="/#session">Book Individualized Session</a>
+        <a href="/#webinar">Free Webinars</a>
+        <a href="/#events">In-Person Events</a>
+        <a href="/#resources">Resources</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>GHN Communications Admin Team</p>
+        <a href="mailto:admin@ghncomms.com">admin@ghncomms.com</a>
+        <a href="tel:8562782182">856-278-2182</a>
+      </div>
+      <div class="footer-col">
+        <h4>Certifications</h4>
+        <div class="footer-certs">
+          <span class="cert-badge">SBA EDWOSB</span><span class="cert-badge">DBE</span>
+          <span class="cert-badge">ACDBE</span><span class="cert-badge">MWBE</span><span class="cert-badge">SBE</span>
+        </div>
+        <p style="margin-top:1rem; font-size:0.78rem; color:rgba(255,255,255,.35);">English &amp; Spanish</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 GHN Communications. All rights reserved.</p>
+      <p class="footer-credit">Produced by GHN Communications</p>
+    </div>
+  </footer>
+
+</div><!-- /#ghn-summit -->
