@@ -115,10 +115,27 @@
       color: #fff; font-weight: 800; max-width: 720px; margin-bottom: 1.5rem;
     }
     .event-hero h1 .accent { color: var(--accent); }
-    .event-meta { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 2rem; }
-    .meta-row { display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.95rem; color: rgba(255,255,255,.82); }
-    .meta-icon { font-size: 1.05rem; flex-shrink: 0; margin-top: 0.05rem; }
-    .meta-row strong { color: #fff; }
+    .event-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 2rem; }
+    @media (max-width: 640px) { .event-meta { grid-template-columns: 1fr; } }
+    .meta-row {
+      display: flex; align-items: flex-start; gap: 1rem;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 10px;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.95rem; color: rgba(255,255,255,.9);
+      backdrop-filter: blur(4px);
+    }
+    .meta-icon {
+      font-size: 1.15rem; flex-shrink: 0;
+      width: 36px; height: 36px;
+      background: rgba(46,162,204,.2);
+      border: 1px solid rgba(46,162,204,.35);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      margin-top: 0;
+    }
+    .meta-row strong { color: #fff; display: block; margin-bottom: 0.1rem; }
     .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 
     /* WHO SHOULD ATTEND */
@@ -261,28 +278,17 @@
 
     /* FOOTER */
     .site-footer { background: var(--teal-dark); padding: 3.5rem 2rem 2rem; }
-    .footer-disclaimer {
+    .footer-main {
       max-width: 1100px; margin: 0 auto;
-      padding-bottom: 2rem; margin-bottom: 2rem;
-      border-bottom: 1px solid rgba(255,255,255,.08);
+      display: flex; gap: 0; align-items: stretch;
+      padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,.08);
     }
-    .footer-disclaimer-label {
-      font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 2.5px; color: var(--accent); margin-bottom: 0.9rem;
-    }
-    .footer-disclaimer-body { font-size: 0.8rem; color: rgba(255,255,255,.42); line-height: 1.75; }
-    .footer-disclaimer-body p + p { margin-top: 0.65rem; }
-    .footer-grid {
-      max-width: 1100px; margin: 0 auto;
-      display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr;
-      gap: 2.5rem; padding-bottom: 2.5rem;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
+    .footer-about { flex: 1.8; padding-right: 3rem; border-right: 1px solid rgba(255,255,255,.1); }
+    .footer-contact { flex: 1; padding-left: 3rem; }
     .footer-logo { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem; text-decoration: none; }
     .footer-logo img { height: 34px; width: auto; flex-shrink: 0; }
     .footer-logo-text {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.88rem; font-weight: 700;
+      font-family: 'Montserrat', sans-serif; font-size: 0.88rem; font-weight: 700;
       color: rgba(255,255,255,.8); white-space: nowrap;
     }
     .footer-tagline { font-size: 0.82rem; color: rgba(255,255,255,.42); line-height: 1.65; margin-bottom: 1.25rem; }
@@ -292,42 +298,62 @@
       background: rgba(255,255,255,.08);
       display: flex; align-items: center; justify-content: center;
       text-decoration: none; font-size: 0.85rem;
-      color: rgba(255,255,255,.6); transition: background 0.15s;
+      color: rgba(255,255,255,.6); transition: background 0.15s, color 0.15s;
     }
     .social-link:hover { background: var(--accent); color: #fff; }
-    .footer-col h4 {
-      font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 700;
+    .footer-contact-heading {
+      font-family: 'Montserrat', sans-serif; font-size: 0.68rem; font-weight: 700;
       text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 1rem;
     }
-    .footer-col a, .footer-col p {
-      display: block; font-size: 0.83rem; color: rgba(255,255,255,.55);
-      text-decoration: none; margin-bottom: 0.38rem; transition: color 0.15s; line-height: 1.5;
+    .footer-contact-name { font-size: 0.88rem; color: rgba(255,255,255,.7); margin-bottom: 0.5rem; }
+    .footer-contact-link {
+      display: block; font-size: 0.85rem; color: rgba(255,255,255,.5);
+      text-decoration: none; margin-bottom: 0.35rem; transition: color 0.15s;
     }
-    .footer-col a:hover { color: var(--accent); }
-    .footer-certs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
-    .cert-badge {
-      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12);
-      color: rgba(255,255,255,.55); font-family: 'Montserrat', sans-serif;
-      font-size: 0.58rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
-      padding: 0.2rem 0.5rem; border-radius: 3px;
+    .footer-contact-email {
+      display: block; font-size: 0.9rem; font-weight: 600;
+      color: rgba(255,255,255,.85); text-decoration: none; margin-top: 0.25rem; transition: color 0.15s;
     }
+    .footer-contact-link:hover, .footer-contact-email:hover { color: var(--accent); }
+    .footer-nav {
+      max-width: 1100px; margin: 2rem auto 0;
+      display: flex; flex-wrap: wrap; gap: 0.35rem 2.5rem;
+      padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .footer-nav a { font-size: 0.85rem; color: rgba(255,255,255,.45); text-decoration: none; transition: color 0.15s; }
+    .footer-nav a:hover { color: var(--accent); }
+    .footer-disclaimer {
+      max-width: 1100px; margin: 0 auto;
+      padding: 0 0 1.75rem; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 2.5rem;
+    }
+    .footer-disclaimer-label {
+      font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,.35); margin-bottom: 0.65rem;
+    }
+    .footer-disclaimer p { font-size: 0.74rem; color: rgba(255,255,255,.3); line-height: 1.6; margin-bottom: 0.4rem; }
+    .footer-disclaimer p:last-child { margin-bottom: 0; }
     .footer-bottom {
       max-width: 1100px; margin: 1.5rem auto 0;
-      display: flex; justify-content: space-between; align-items: center;
+      display: flex; align-items: center; justify-content: space-between;
       flex-wrap: wrap; gap: 0.75rem;
     }
     .footer-copy { font-size: 0.74rem; color: rgba(255,255,255,.26); }
     .footer-credit { font-size: 0.72rem; color: rgba(255,255,255,.26); }
 
     /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .footer-about { padding-right: 2rem; }
+      .footer-contact { padding-left: 2rem; }
+    }
     @media (max-width: 900px) {
       .session-cards { grid-template-columns: 1fr; }
       .select-cards { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 640px) {
       .agenda-time { width: 100px; font-size: 0.7rem; }
-      .footer-grid { grid-template-columns: 1fr; }
+      .footer-main { flex-direction: column; gap: 2rem; }
+      .footer-about { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); padding-right: 0; padding-bottom: 2rem; }
+      .footer-contact { padding-left: 0; }
       .footer-bottom { flex-direction: column; text-align: center; }
     }
   </style>
@@ -366,7 +392,7 @@
       </div>
     </div>
     <div class="hero-ctas">
-      <a href="#select-session" class="btn btn-accent btn-lg">Register Now</a>
+      <a href="#select-session" class="btn btn-ghost btn-lg">Register Now</a>
       <a href="#who-should-attend" class="btn btn-ghost">Learn More</a>
     </div>
   </div>
@@ -415,7 +441,7 @@
         <div class="group-label">Working Session Group 1</div>
         <h3>Morning Session</h3>
         <div class="time-badge">8:00 AM – 12:00 PM</div>
-        <p>Join the morning cohort for registration, breakfast, networking, and a full Personal Narrative Development Intensive.</p>
+        <p>Join the morning cohort for registration, breakfast, networking, lunch and a full Personal Narrative Development Intensive.</p>
         <div class="seats">Capacity: <span>10 seats</span></div>
         <a href="#select-session" class="btn btn-accent">Register – Group 1</a>
       </div>
@@ -495,13 +521,6 @@
               <p>Working Session Group 1 participants transition to networking lunch while Working Session Group 2 participants arrive, register, and join the networking lunch prior to the afternoon programming.</p>
             </td>
           </tr>
-          <tr>
-            <td class="agenda-time">12:00pm – 12:15pm</td>
-            <td class="agenda-content">
-              <strong>Transition Between Groups</strong>
-              <p>Conclusion of Working Session Group 1 and commencement of Working Session Group 2, including welcome remarks and a brief overview of the afternoon session.</p>
-            </td>
-          </tr>
         </tbody>
       </table>
     </div>
@@ -544,84 +563,73 @@
   <div class="select-inner">
     <span class="section-label" style="color:var(--accent); text-align:center; display:block;">Register</span>
     <h2>Select Your Preferred Working Session</h2>
-    <p>Space is limited to 10 participants per session to ensure every participant receives meaningful, hands-on support. Reserve your place today.</p>
+    <p>Space is limited to 10 participants per session to ensure every participant receives meaningful, hands-on support. Reserve your spot today.</p>
     <div class="select-cards">
 
       <div class="select-card">
         <div class="sc-label">Working Session Group 1</div>
-        <div class="sc-time">8:00 AM – 12:15 PM</div>
-        <a href="mailto:admin@ghncomms.com?subject=Summit%20Registration%20-%20Group%201%20-%20June%202%2C%202026" class="btn btn-accent">Register – Group 1</a>
+        <div class="sc-time">8:00 AM – 12:00 PM</div>
+        <a href="mailto:admin@ghncomms.com?subject=Summit%20Registration%20-%20Group%201%20-%20June%202%2C%202026" class="btn btn-ghost">Register – Group 1</a>
       </div>
 
       <div class="select-card">
         <div class="sc-label">Working Session Group 2</div>
-        <div class="sc-time">11:00 AM – 2:40 PM</div>
+        <div class="sc-time">11:00 AM – 2:30 PM</div>
         <a href="mailto:admin@ghncomms.com?subject=Summit%20Registration%20-%20Group%202%20-%20June%202%2C%202026" class="btn btn-ghost">Register – Group 2</a>
       </div>
 
     </div>
-    <p class="select-note">Registration links coming soon. Email admin@ghncomms.com or call 856-278-2182 to confirm your spot.</p>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="site-footer">
+<footer class="site-footer" id="contact">
 
-  <!-- Disclaimer -->
-  <div class="footer-disclaimer">
-    <div class="footer-disclaimer-label">Important Disclaimer</div>
-    <div class="footer-disclaimer-body">
-      <p>GHN Communications is an independent strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement. GHN Communications is not affiliated with, endorsed by, or acting on behalf of any federal, state, or local government agency.</p>
-    </div>
-  </div>
+  <div class="footer-main">
 
-  <div class="footer-grid">
-
-    <div>
+    <!-- Left: About / Brand -->
+    <div class="footer-about">
       <a href="index.html" class="footer-logo" aria-label="GHN Communications">
         <img src="https://i0.wp.com/ghncomms.com/wp-content/uploads/2023/01/White-GHN-Communications-logonew.png" alt="GHN Communications" />
         <span class="footer-logo-text">GHN Communications</span>
       </a>
-      <p class="footer-tagline">Strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement.</p>
-      <div class="footer-social">
+      <p class="footer-tagline">GHN Communications is an independent strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement. GHN Communications is not affiliated with, endorsed by, or acting on behalf of any federal, state, or local government agency.</p>
+      <p class="footer-tagline">GHN Communications does not provide legal advice, determine eligibility, interpret regulations, or guarantee DBE/ACDBE certification, recertification, or approval outcomes. All certification and reevaluation decisions are made solely by the appropriate certifying authority.</p>
+      <p class="footer-tagline">All Personal Narrative content, supporting facts, documentation, and final submission decisions remain the responsibility of the business owner.</p>
+    </div>
+
+    <!-- Right: Contact -->
+    <div class="footer-contact" id="contact-info">
+      <h4 class="footer-contact-heading">Contact</h4>
+      <p class="footer-contact-name">GHN Communications Admin Team</p>
+      <a href="tel:8562782182" class="footer-contact-link">856-278-2182</a>
+      <a href="mailto:admin@ghncomms.com" class="footer-contact-email">admin@ghncomms.com</a>
+      <div class="footer-social" style="margin-top: 1.25rem;">
         <a href="https://www.facebook.com/ghncomms/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">f</a>
         <a href="https://www.linkedin.com/company/ghn-communications" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">in</a>
         <a href="https://www.instagram.com/ghncomms/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">ig</a>
       </div>
-    </div>
-
-    <div class="footer-col">
-      <h4>Readiness Hub</h4>
-      <a href="index.html#session">Book Individualized Session</a>
-      <a href="index.html#webinar">Free Webinars</a>
-      <a href="index.html#events">In-Person Events</a>
-      <a href="index.html#resources">Resources</a>
-    </div>
-
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p>GHN Communications Admin Team</p>
-      <a href="mailto:admin@ghncomms.com">admin@ghncomms.com</a>
-      <a href="tel:8562782182">856-278-2182</a>
-    </div>
-
-    <div class="footer-col">
-      <h4>Certifications</h4>
-      <div class="footer-certs">
-        <span class="cert-badge">SBA EDWOSB</span>
-        <span class="cert-badge">DBE</span>
-        <span class="cert-badge">ACDBE</span>
-        <span class="cert-badge">MWBE</span>
-        <span class="cert-badge">SBE</span>
+      <div class="footer-credit" style="display:flex; align-items:center; gap:0.5rem; margin-top: 1.25rem;">
+        Produced by
+        <img src="https://i0.wp.com/ghncomms.com/wp-content/uploads/2023/01/White-GHN-Communications-logonew.png" alt="GHN Communications" style="height:22px; width:auto; opacity:0.5;" />
+        <span style="font-family:'Montserrat',sans-serif; font-weight:700; opacity:0.5;">GHN Communications</span>
       </div>
-      <p style="margin-top:1rem; font-size:0.78rem; color:rgba(255,255,255,.35);">English &amp; Spanish</p>
     </div>
 
   </div>
 
+  <!-- Bottom nav links -->
+  <nav class="footer-nav">
+    <a href="index.html">Readiness Hub</a>
+    <a href="index.html#session">Individualized Sessions</a>
+    <a href="index.html#webinar">Free Webinars</a>
+    <a href="index.html#events">In-Person Events</a>
+    <a href="index.html#resources">Resources</a>
+    <a href="summit.html">Summit</a>
+  </nav>
+
   <div class="footer-bottom">
     <p class="footer-copy">&copy; 2026 GHN Communications. All rights reserved.</p>
-    <p class="footer-credit">Produced by GHN Communications</p>
   </div>
 </footer>
 
