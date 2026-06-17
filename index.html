@@ -244,12 +244,25 @@
 
     /* ── Hero entrance keyframes ── */
     @keyframes heroFadeUp {
-      from { opacity: 0; transform: translateY(22px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     @keyframes heroFadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
     .hero-eyebrow {
@@ -291,9 +304,18 @@
       opacity: 0;
       animation: heroFadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
     }
-    .hero-h1-line:nth-child(1) { animation-delay: 0.22s; }
-    .hero-h1-line:nth-child(2) { animation-delay: 0.38s; }
-    .hero-h1-line:nth-child(3) { animation-delay: 0.54s; }
+
+    .hero-h1-line:nth-child(1) {
+      animation-delay: 0.22s;
+    }
+
+    .hero-h1-line:nth-child(2) {
+      animation-delay: 0.38s;
+    }
+
+    .hero-h1-line:nth-child(3) {
+      animation-delay: 0.54s;
+    }
 
     .hero-sub {
       font-size: 1.05rem;
@@ -327,7 +349,7 @@
       opacity: 0;
       transition:
         transform 0.52s cubic-bezier(0.22, 1, 0.36, 1),
-        opacity   0.38s ease;
+        opacity 0.38s ease;
       will-change: transform, opacity;
     }
 
@@ -519,7 +541,9 @@
     .service-block::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 3px;
       background: linear-gradient(90deg, var(--teal), var(--accent));
     }
@@ -528,7 +552,8 @@
     .service-block::after {
       content: attr(data-step);
       position: absolute;
-      top: 0.75rem; right: 1.75rem;
+      top: 0.75rem;
+      right: 1.75rem;
       font-family: 'Montserrat', sans-serif;
       font-size: 5.5rem;
       font-weight: 900;
@@ -802,6 +827,15 @@
       border-radius: 12px;
       overflow: hidden;
       background: var(--gray-50);
+      display: block;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      border-color: var(--accent);
     }
 
     .resource-thumb {
@@ -832,6 +866,11 @@
       font-size: 0.98rem;
       color: var(--teal);
       margin-bottom: 0.45rem;
+      transition: color 0.2s ease;
+    }
+
+    .resource-card:hover h4 {
+      color: var(--accent);
     }
 
     .resource-desc {
@@ -892,10 +931,17 @@
       border-color: var(--accent);
     }
 
-    .slider-arrow-prev { left: 0; }
-    .slider-arrow-next { right: 0; }
+    .slider-arrow-prev {
+      left: 0;
+    }
 
-    .testimonials-viewport { overflow: hidden; }
+    .slider-arrow-next {
+      right: 0;
+    }
+
+    .testimonials-viewport {
+      overflow: hidden;
+    }
 
     .testimonials-track {
       display: flex;
@@ -1161,7 +1207,9 @@
     }
 
     .footer-contact-link:hover,
-    .footer-contact-email:hover { color: var(--accent); }
+    .footer-contact-email:hover {
+      color: var(--accent);
+    }
 
     .footer-nav {
       max-width: 1200px;
@@ -1180,7 +1228,9 @@
       transition: color 0.15s;
     }
 
-    .footer-nav a:hover { color: var(--accent); }
+    .footer-nav a:hover {
+      color: var(--accent);
+    }
 
     .footer-disclaimer {
       max-width: 1200px;
@@ -1235,8 +1285,13 @@
        RESPONSIVE
     ═══════════════════════════════════════════ */
     @media (max-width: 1024px) {
-      .footer-about { padding-right: 2rem; }
-      .footer-contact { padding-left: 2rem; }
+      .footer-about {
+        padding-right: 2rem;
+      }
+
+      .footer-contact {
+        padding-left: 2rem;
+      }
     }
 
     @media (max-width: 900px) {
@@ -1332,21 +1387,27 @@
       <!-- ANIMATED: sliding stage -->
       <div class="hero-stage" id="hero-stage">
         <div class="hero-slide" data-index="0">
-          <p class="hero-sub">Structured guidance to help business owners organize their facts, strengthen their Personal Narrative, and move toward reevaluation submission readiness under the new DOT requirements.</p>
+          <p class="hero-sub">Structured guidance to help business owners organize their facts, strengthen their
+            Personal Narrative, and move toward reevaluation submission readiness under the new DOT requirements.</p>
         </div>
         <div class="hero-slide" data-index="1">
-          <p class="hero-sub">One-on-one working sessions designed for your stage — whether you need a focused 45-minute triage or a comprehensive 90-minute strategy and development intensive.</p>
+          <p class="hero-sub">One-on-one working sessions designed for your stage — whether you need a focused 45-minute
+            triage or a comprehensive 90-minute strategy and development intensive.</p>
         </div>
         <div class="hero-slide" data-index="2">
-          <p class="hero-sub">Join 88+ business owners across 8 states who have gained the clarity, structure, and confidence needed to move toward submission readiness with GHN Communications.</p>
+          <p class="hero-sub">Join 88+ business owners across 8 states who have gained the clarity, structure, and
+            confidence needed to move toward submission readiness with GHN Communications.</p>
         </div>
         <div class="hero-slide" data-index="3">
-          <p class="hero-sub">Navigate the DOT's evolving Personal Narrative requirements with a proven framework — organized facts, a compelling story, and a polished, submission-ready draft.</p>
+          <p class="hero-sub">Navigate the DOT's evolving Personal Narrative requirements with a proven framework —
+            organized facts, a compelling story, and a polished, submission-ready draft.</p>
         </div>
       </div>
 
       <!-- Progress bar + dots -->
-      <div class="hero-progress"><div class="hero-progress-bar" id="hero-bar"></div></div>
+      <div class="hero-progress">
+        <div class="hero-progress-bar" id="hero-bar"></div>
+      </div>
       <div class="hero-dots" id="hero-dots">
         <button class="hero-dot" data-i="0" aria-label="Slide 1"></button>
         <button class="hero-dot" data-i="1" aria-label="Slide 2"></button>
@@ -1376,7 +1437,8 @@
         <!-- Left: map image -->
         <div class="map-wrap">
           <p class="map-label">States Reached Through Direct Support</p>
-          <img src="map.png" alt="U.S. map highlighting states served: NY, NJ, KY, GA, TX, IL, FL, MA" class="map-img" />
+          <img src="map.png" alt="U.S. map highlighting states served: NY, NJ, KY, GA, TX, IL, FL, MA"
+            class="map-img" />
         </div>
 
         <!-- Right: metrics -->
@@ -1444,8 +1506,8 @@
               <li>Readiness guidance</li>
               <li>Next-step recommendations</li>
             </ul>
-            <a href="https://calendly.com/ghncomms/personal-narrative-triage-session-45-min?month=2026-05" target="_blank"
-              rel="noopener" class="btn btn-accent">
+            <a href="https://calendly.com/ghncomms/personal-narrative-triage-session-45-min?month=2026-05"
+              target="_blank" rel="noopener" class="btn btn-accent">
               Book Triage Session
             </a>
           </div>
@@ -1517,30 +1579,17 @@
 
         <div class="summit-card">
           <div>
-            <span class="summit-tag">In-Person Event</span>
-            <h4>South Florida Personal Narrative Readiness Summit</h4>
-            <div class="summit-meta">
-              <div class="summit-meta-row">
-                <span>📍</span>
-                <span>Alan B. Levan | NSU Broward Center of Innovation</span>
-              </div>
-              <div class="summit-meta-row">
-                <span>📅</span>
-                <span>June 2, 2026</span>
-              </div>
-            </div>
+            <span class="summit-tag">In-Person Events</span>
+            <h4>New In-Person Events Coming Soon</h4>
             <p class="summit-desc">
-              A hands-on working session designed to help business owners develop their Personal Narrative,
-              organize supporting information, and improve reevaluation submission readiness through
-              practical guidance.
+              Our South Florida Personal Narrative Readiness Summit has concluded. We are currently scheduling new dates and locations for upcoming in-person readiness sessions and summits.
             </p>
             <p class="summit-desc">
-              The summit is composed of two small-group intensive working sessions designed to maximize
-              participant interaction and hands-on support.
+              Check back soon for updates, or contact our team directly to be notified as soon as new event registrations open.
             </p>
           </div>
           <div class="summit-cta">
-            <a href="summit.html" class="btn btn-accent">Learn More &amp; Register</a>
+            <a href="#contact-info" class="btn btn-accent">Contact Us for Updates</a>
           </div>
         </div>
       </div>
@@ -1553,25 +1602,27 @@
         </div>
         <div class="resource-grid">
 
-          <div class="resource-card">
+          <a href="https://ghncomms.com/the-storytelling-communications-fundamentals-of-your-personal-narrative/"
+            class="resource-card">
             <div class="resource-thumb">📝</div>
             <div class="resource-body">
               <div class="resource-type">Blog</div>
-              <h4>Blog Title</h4>
-              <p class="resource-desc">Coming soon — check back for helpful articles and guidance on the Personal
-                Narrative process.</p>
+              <h4>The Storytelling &amp; Communications Fundamentals of Your Personal Narrative</h4>
+              <p class="resource-desc">Learn how DBE and ACDBE business owners can use storytelling and communication
+                principles to organize facts, barriers, and business impact clearly.</p>
             </div>
-          </div>
+          </a>
 
-          <div class="resource-card">
+          <a href="https://ghncomms.com/common-mistakes-to-avoid-when-developing-your-personal-narrative/"
+            class="resource-card">
             <div class="resource-thumb">📝</div>
             <div class="resource-body">
               <div class="resource-type">Blog</div>
-              <h4>Blog Title</h4>
-              <p class="resource-desc">Coming soon — check back for helpful articles and guidance on the Personal
-                Narrative process.</p>
+              <h4>Common Mistakes to Avoid When Developing Your Personal Narrative</h4>
+              <p class="resource-desc">Avoid the eight common missteps when crafting your personal narrative—with
+                examples, clear impact, and practical fixes.</p>
             </div>
-          </div>
+          </a>
 
         </div>
       </div>
@@ -1594,7 +1645,8 @@
 
             <div class="tcard">
               <div class="t-quote">"</div>
-              <p class="t-text">The difference before and after the session was day and night. Following submission, my DBE
+              <p class="t-text">The difference before and after the session was day and night. Following submission, my
+                DBE
                 renewal was approved within two business days.</p>
               <div class="t-author">
                 <div class="t-name">Jun Ma, President</div>
@@ -1604,9 +1656,12 @@
 
             <div class="tcard">
               <div class="t-quote">"</div>
-              <p class="t-text">The PN triage session was incredibly productive. Gina was clear, constructive, and focused
-                on helping me strengthen the letter. We worked through it sentence by sentence, reorganized the content for
-                greater clarity, and identified the specific dates and financial figures needed to support the narrative.
+              <p class="t-text">The PN triage session was incredibly productive. Gina was clear, constructive, and
+                focused
+                on helping me strengthen the letter. We worked through it sentence by sentence, reorganized the content
+                for
+                greater clarity, and identified the specific dates and financial figures needed to support the
+                narrative.
               </p>
               <div class="t-author">
                 <div class="t-name">Kristin Booker, PLA, ASLA, CLARB</div>
@@ -1616,7 +1671,8 @@
 
             <div class="tcard">
               <div class="t-quote">"</div>
-              <p class="t-text">Your training was so helpful, and I am totally wowed by your ability to use AI as you did! I
+              <p class="t-text">Your training was so helpful, and I am totally wowed by your ability to use AI as you
+                did! I
                 learned a lot!</p>
               <div class="t-author">
                 <div class="t-name">Kerie Hubbell Albano, President</div>
@@ -1636,7 +1692,8 @@
 
             <div class="tcard">
               <div class="t-quote">"</div>
-              <p class="t-text">I sought out Gina for help in strengthening my personal narrative. The session was extremely
+              <p class="t-text">I sought out Gina for help in strengthening my personal narrative. The session was
+                extremely
                 helpful and gave me a clearer understanding of how to build and present proof of disadvantage in a more
                 organized way.</p>
               <div class="t-author">
@@ -1648,7 +1705,8 @@
             <div class="tcard">
               <div class="t-quote">"</div>
               <p class="t-text">What was most impactful was her ability to help us brainstorm and identify real-life
-                examples that strengthened the narrative. After the session, I felt much more confident that our Personal
+                examples that strengthened the narrative. After the session, I felt much more confident that our
+                Personal
                 Narrative was complete and ready for submission.</p>
               <div class="t-author">
                 <div class="t-name">Flor Wieczorek, Owner</div>
@@ -1659,7 +1717,8 @@
             <div class="tcard">
               <div class="t-quote">"</div>
               <p class="t-text">My session with Gina was excellent. She quickly understood my story and helped me
-                communicate it in a much clearer and more effective way. What was most valuable was her guidance and support
+                communicate it in a much clearer and more effective way. What was most valuable was her guidance and
+                support
                 throughout every step of developing my Personal Narrative. After the session, I felt significantly more
                 confident, and the concerns and anxiety I initially had about the process were eliminated.</p>
               <div class="t-author">
@@ -1708,9 +1767,15 @@
             alt="GHN Communications" />
           <span class="footer-logo-text">GHN Communications</span>
         </a>
-        <p class="footer-tagline">GHN Communications is an independent strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement. GHN Communications is not affiliated with, endorsed by, or acting on behalf of any federal, state, or local government agency.</p>
-        <p class="footer-tagline">GHN Communications does not provide legal advice, determine eligibility, interpret regulations, or guarantee DBE/ACDBE certification, recertification, or approval outcomes. All certification and reevaluation decisions are made solely by the appropriate certifying authority.</p>
-        <p class="footer-tagline">All Personal Narrative content, supporting facts, documentation, and final submission decisions remain the responsibility of the business owner.</p>
+        <p class="footer-tagline">GHN Communications is an independent strategic communications and public relations
+          firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement. GHN
+          Communications is not affiliated with, endorsed by, or acting on behalf of any federal, state, or local
+          government agency.</p>
+        <p class="footer-tagline">GHN Communications does not provide legal advice, determine eligibility, interpret
+          regulations, or guarantee DBE/ACDBE certification, recertification, or approval outcomes. All certification
+          and reevaluation decisions are made solely by the appropriate certifying authority.</p>
+        <p class="footer-tagline">All Personal Narrative content, supporting facts, documentation, and final submission
+          decisions remain the responsibility of the business owner.</p>
       </div>
 
       <!-- Right: Contact -->
@@ -1720,11 +1785,15 @@
         <a href="tel:8562782182" class="footer-contact-link">856-278-2182</a>
         <a href="mailto:admin@ghncomms.com" class="footer-contact-email">admin@ghncomms.com</a>
         <div class="footer-social" style="margin-top: 1.25rem;">
-          <a href="https://www.facebook.com/ghncomms/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">f</a>
-          <a href="https://www.linkedin.com/company/ghn-communications" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">in</a>
-          <a href="https://www.instagram.com/ghncomms/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">ig</a>
+          <a href="https://www.facebook.com/ghncomms/" target="_blank" rel="noopener" class="social-link"
+            aria-label="Facebook">f</a>
+          <a href="https://www.linkedin.com/company/ghn-communications" target="_blank" rel="noopener"
+            class="social-link" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com/ghncomms/" target="_blank" rel="noopener" class="social-link"
+            aria-label="Instagram">ig</a>
         </div>
-        <div class="footer-credit" style="display:flex; flex-direction:column; align-items:flex-start; gap:0.6rem; margin-top: 2rem;">
+        <div class="footer-credit"
+          style="display:flex; flex-direction:column; align-items:flex-start; gap:0.6rem; margin-top: 2rem;">
           <span>Produced by</span>
           <img src="https://i0.wp.com/ghncomms.com/wp-content/uploads/2023/01/White-GHN-Communications-logonew.png"
             alt="GHN Communications" style="height:128px; width:auto; opacity:0.5;" />
@@ -1740,7 +1809,6 @@
       <a href="#webinar">Free Webinars</a>
       <a href="#events">In-Person Events</a>
       <a href="#resources">Resources</a>
-      <a href="summit.html">Summit</a>
     </nav>
 
     <div class="footer-bottom">
@@ -1829,12 +1897,12 @@
   <!-- Hero slideshow -->
   <script>
     (function () {
-      var stage   = document.getElementById('hero-stage');
-      var bar     = document.getElementById('hero-bar');
-      var slides  = Array.from(stage.querySelectorAll('.hero-slide'));
-      var dots    = Array.from(document.querySelectorAll('#hero-dots .hero-dot'));
-      var cur     = -1;   /* -1 = nothing active yet (first slide will enter from right) */
-      var TICK    = 5200; // ms per slide
+      var stage = document.getElementById('hero-stage');
+      var bar = document.getElementById('hero-bar');
+      var slides = Array.from(stage.querySelectorAll('.hero-slide'));
+      var dots = Array.from(document.querySelectorAll('#hero-dots .hero-dot'));
+      var cur = -1;   /* -1 = nothing active yet (first slide will enter from right) */
+      var TICK = 5200; // ms per slide
       var timer;
 
       /* Set stage height to the tallest slide so nothing shifts */
