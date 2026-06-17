@@ -1,0 +1,810 @@
+{
+  "version": "0.4",
+  "title": "Personal Narrative Readiness Hub | GHN Communications",
+  "type": "page",
+  "settings": {
+    "post_title": "Personal Narrative Readiness Hub | GHN Communications",
+    "post_status": "publish"
+  },
+  "elements": [
+    {
+      "id": "section-nav",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#0b2545",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "position": "sticky",
+        "sticky": "top",
+        "sticky_on": ["desktop", "tablet", "mobile"],
+        "box_shadow": "0 2px 12px rgba(0,0,0,.3)",
+        "min_height": {
+          "unit": "px",
+          "size": 70
+        }
+      },
+      "elements": [
+        {
+          "id": "col-nav",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": 0,
+              "right": 32,
+              "bottom": 0,
+              "left": 32,
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "nav-logo-widget",
+              "elType": "widget",
+              "settings": {
+                "title": "",
+                "text": "<a href=\"index.html\" style=\"display:flex; align-items:center; gap:0.7rem; text-decoration:none;\" aria-label=\"GHN Communications – Home\"><div style=\"width:42px; height:42px; background:#c8922a; border-radius:6px; display:flex; align-items:center; justify-content:center; font-family:Montserrat; font-weight:800; font-size:1rem; color:#0b2545; letter-spacing:-0.5px;\">GHN</div><div style=\"display:flex; flex-direction:column; line-height:1.1;\"><span style=\"font-family:Montserrat; font-weight:700; font-size:1rem; color:#fff; letter-spacing:2px;\">GHN</span><span style=\"font-family:Montserrat; font-size:0.55rem; font-weight:600; color:#c8922a; letter-spacing:3px; text-transform:uppercase;\">Communications</span></div></a>",
+                "align": "left"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "col-nav-links",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0,
+              "isLinked": false
+            },
+            "horizontal_align": "right"
+          },
+          "elements": [
+            {
+              "id": "nav-links-widget",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"display:flex; gap:0.25rem; align-items:center;\"><a href=\"#session\" style=\"color:rgba(255,255,255,.75); font-size:0.82rem; font-weight:500; text-decoration:none; padding:0.4rem 0.8rem; border-radius:4px; transition:all 0.15s;\">Book Session</a><a href=\"#webinar\" style=\"color:rgba(255,255,255,.75); font-size:0.82rem; font-weight:500; text-decoration:none; padding:0.4rem 0.8rem; border-radius:4px; transition:all 0.15s;\">Webinars</a><a href=\"#events\" style=\"color:rgba(255,255,255,.75); font-size:0.82rem; font-weight:500; text-decoration:none; padding:0.4rem 0.8rem; border-radius:4px; transition:all 0.15s;\">Events</a><a href=\"#resources\" style=\"color:rgba(255,255,255,.75); font-size:0.82rem; font-weight:500; text-decoration:none; padding:0.4rem 0.8rem; border-radius:4px; transition:all 0.15s;\">Resources</a><a href=\"#contact\" style=\"color:rgba(255,255,255,.75); font-size:0.82rem; font-weight:500; text-decoration:none; padding:0.4rem 0.8rem; border-radius:4px; transition:all 0.15s;\">Contact</a><a href=\"#session\" style=\"background:#c8922a; color:#0b2545; font-weight:700; margin-left:0.5rem; padding:0.4rem 0.8rem; border-radius:4px; font-family:Montserrat; font-size:0.82rem; text-decoration:none; transition:all 0.15s;\">Book Now</a></div>",
+                "align": "right"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-hero",
+      "elType": "section",
+      "settings": {
+        "background_background": "gradient",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": 135,
+        "background_gradient_stops": [
+          {"unit": "%", "position": 0, "color": "rgb(11, 37, 69)"},
+          {"unit": "%", "position": 55, "color": "rgb(21, 61, 120)"},
+          {"unit": "%", "position": 100, "color": "rgb(13, 47, 92)"}
+        ],
+        "padding": {
+          "unit": "px",
+          "top": 88,
+          "right": 32,
+          "bottom": 72,
+          "left": 32,
+          "isLinked": false
+        },
+        "overflow": "hidden"
+      },
+      "elements": [
+        {
+          "id": "col-hero",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "hero-eyebrow",
+              "elType": "widget",
+              "settings": {
+                "text": "Personal Narrative Readiness Hub",
+                "align": "left",
+                "title_color": "#c8922a",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 11},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 2.5},
+                "text_transform": "uppercase"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "hero-h1",
+              "elType": "widget",
+              "settings": {
+                "editor": "Personal Narrative Readiness Support for <span style=\"color:#c8922a;\">DBE/ACDBE</span> Business Owners",
+                "align": "left",
+                "title_color": "#fff",
+                "heading_title": "h1",
+                "typography_typography": "custom",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 52},
+                "typography_font_weight": "800",
+                "line_height": "1.15",
+                "margin": {"unit": "px", "bottom": 20}
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "hero-sub",
+              "elType": "widget",
+              "settings": {
+                "text": "Structured guidance to help business owners organize their facts, strengthen their Personal Narrative, their story, and move toward reevaluation submission readiness under the new DOT requirements.",
+                "align": "left",
+                "text_color": "rgba(255,255,255,.78)",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {"unit": "px", "size": 17},
+                "line_height": "1.75",
+                "margin": {"unit": "px", "bottom": 44}
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "hero-ctas",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"display:flex; flex-wrap:wrap; gap:12px;\"><a href=\"#session\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; letter-spacing:0.3px; text-decoration:none; border:none; cursor:pointer; transition:all 0.18s ease; background:#c8922a; color:#0b2545;\">Book Individualized Session</a><a href=\"#webinar\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; letter-spacing:0.3px; text-decoration:none; border:2px solid rgba(255,255,255,.65); cursor:pointer; transition:all 0.18s ease; background:transparent; color:#fff;\">Register for Free Webinar</a><a href=\"#events\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; letter-spacing:0.3px; text-decoration:none; border:2px solid rgba(255,255,255,.65); cursor:pointer; transition:all 0.18s ease; background:transparent; color:#fff;\">View In-Person Events</a><a href=\"#resources\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; letter-spacing:0.3px; text-decoration:none; border:2px solid rgba(255,255,255,.65); cursor:pointer; transition:all 0.18s ease; background:transparent; color:#fff;\">Resources</a></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-supported",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#f8fafc",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 32,
+          "bottom": 80,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-supported-header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "supported-label",
+              "elType": "widget",
+              "settings": {
+                "text": "IMPACT",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 11},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 3},
+                "text_transform": "uppercase"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "supported-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "Who We've Supported",
+                "heading_title": "h2",
+                "title_color": "#0b2545",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 40},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "bottom": 13}
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "supported-intro",
+              "elType": "widget",
+              "settings": {
+                "text": "Supporting DBE/ACDBE Business Owners Across Multiple States",
+                "text_color": "#475569",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "line_height": "1.7",
+                "margin": {"unit": "px", "bottom": 40}
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "col-tile-map",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "tile-map-widget",
+              "elType": "widget",
+              "settings": {
+                "text": "<p style=\"font-family:Montserrat; font-size:11.5px; font-weight:600; color:#64748b; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:13.6px;\">States Reached Through Direct Support</p><div id=\"us-tile-map\" style=\"display:grid; grid-template-columns:repeat(12,1fr); gap:3px; margin-bottom:14.4px;\"></div><div style=\"display:flex; gap:24px; font-size:12.5px; color:#475569;\"><div style=\"display:flex; align-items:center; gap:6.4px;\"><div style=\"width:14px; height:14px; border-radius:2px; background:#c8922a;\"></div><span>States Served (NY, NJ, KY, GA, TX, IL, FL, MA)</span></div><div style=\"display:flex; align-items:center; gap:6.4px;\"><div style=\"width:14px; height:14px; border-radius:2px; background:#e2e8f0;\"></div><span>Other States</span></div></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "col-metrics",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "metric-1",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:24px 22.4px; box-shadow:0 2px 10px rgba(0,0,0,.05); margin-bottom:16px;\"><div style=\"font-family:Montserrat; font-size:41.6px; font-weight:800; color:#0b2545; line-height:1; margin-bottom:4.8px;\">88<sup style=\"font-size:22.4px; color:#c8922a;\">+</sup></div><div style=\"font-family:Montserrat; font-size:11.5px; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:0.8px;\">Business Owners Supported</div></div>"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "metric-2",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:24px 22.4px; box-shadow:0 2px 10px rgba(0,0,0,.05); margin-bottom:16px;\"><div style=\"font-family:Montserrat; font-size:41.6px; font-weight:800; color:#0b2545; line-height:1; margin-bottom:4.8px;\">83<sup style=\"font-size:22.4px; color:#c8922a;\">%</sup></div><div style=\"font-family:Montserrat; font-size:11.5px; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:0.8px;\">Live Webinar Attendance Rate</div></div>"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "metric-3",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:24px 22.4px; box-shadow:0 2px 10px rgba(0,0,0,.05); margin-bottom:16px;\"><div style=\"font-family:Montserrat; font-size:41.6px; font-weight:800; color:#0b2545; line-height:1; margin-bottom:4.8px;\">7<sup style=\"font-size:22.4px; color:#c8922a;\">+</sup></div><div style=\"font-family:Montserrat; font-size:11.5px; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:0.8px;\">States Reached Through Direct Support</div></div>"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "metric-4",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:24px 22.4px; box-shadow:0 2px 10px rgba(0,0,0,.05);\"><div style=\"font-family:Montserrat; font-size:24px; font-weight:800; color:#0b2545; line-height:1; margin-bottom:4.8px;\">Strong</div><div style=\"font-family:Montserrat; font-size:11.5px; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:0.8px; margin-bottom:5.6px;\">Participant Outcomes</div><div style=\"font-size:13.1px; color:#64748b; line-height:1.45;\">Participants report stronger narratives, clearer understanding of requirements, and greater readiness for submission.</div></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "col-note",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "supported-note",
+              "elType": "widget",
+              "settings": {
+                "text": "This initiative has generated direct engagement from DBE/ACDBE business owners seeking structured support during the reevaluation process.",
+                "text_color": "#64748b",
+                "typography_font_size": {"unit": "px", "size": 14.7},
+                "line_height": "1.6",
+                "margin": {"unit": "px", "top": 36}
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-services",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#fff",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 32,
+          "bottom": 80,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-services-header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "services-label",
+              "elType": "widget",
+              "settings": {
+                "text": "READINESS SUPPORT SERVICES",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 11},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 3},
+                "text_transform": "uppercase"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "services-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "From Uncertainty to Submission Readiness",
+                "heading_title": "h2",
+                "title_color": "#0b2545",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 40},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "bottom": 13}
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "services-intro",
+              "elType": "widget",
+              "settings": {
+                "text": "GHN Communications provides structured readiness support designed to help business owners move from uncertainty to submission readiness.",
+                "text_color": "#475569",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "line_height": "1.7",
+                "margin": {"unit": "px", "bottom": 56}
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "section-sessions",
+          "elType": "section",
+          "settings": {
+            "padding": {
+              "unit": "px",
+              "top": 0,
+              "right": 0,
+              "bottom": 64,
+              "left": 0,
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "col-session-header",
+              "elType": "column",
+              "settings": {
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "session-block-header",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "<div style=\"display:flex; align-items:center; gap:14.4px; padding-bottom:17.6px; margin-bottom:22.4px; border-bottom:2px solid #f1f5f9;\"><div style=\"width:44px; height:44px; background:#0b2545; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:18.4px; flex-shrink:0;\">📋</div><h3 style=\"font-size:20px; color:#0b2545; font-family:Montserrat; font-weight:700; margin:0;\">Individualized Working Sessions</h3></div>"
+                  },
+                  "widgetType": "text-editor"
+                }
+              ]
+            },
+            {
+              "id": "col-session-cards",
+              "elType": "column",
+              "settings": {
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "session-card-1",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "<div style=\"border:1px solid #e2e8f0; border-radius:12px; padding:32px; background:#f8fafc; display:flex; flex-direction:column;\" onmouseover=\"this.style.borderColor='#c8922a'; this.style.boxShadow='0 6px 20px rgba(200,146,42,.14)';\" onmouseout=\"this.style.borderColor='#e2e8f0'; this.style.boxShadow='none';\"><div style=\"font-family:Montserrat; font-size:10.9px; font-weight:700; color:#c8922a; text-transform:uppercase; letter-spacing:3.2px; margin-bottom:7.2px;\">45 Minutes</div><h4 style=\"font-size:17.6px; color:#0b2545; margin-bottom:8px; font-family:Montserrat; font-weight:700;\">Personal Narrative Triage Session</h4><div style=\"font-family:Montserrat; font-size:32px; font-weight:800; color:#c8922a; margin-bottom:16px;\">$300</div><p style=\"font-size:14.1px; color:#475569; line-height:1.65; margin-bottom:16px; flex:1;\">Designed for owners who already have a draft and would benefit from focused feedback on structure, clarity, and identifying areas that may require strengthening.</p><ul style=\"list-style:none; margin-bottom:24px; padding:0;\"><li style=\"font-size:14.1px; color:#475569; padding:4.8px 0 4.8px 22.4px; position:relative;\"><span style=\"position:absolute; left:0; color:#c8922a; font-weight:700;\">✓</span>Draft review</li><li style=\"font-size:14.1px; color:#475569; padding:4.8px 0 4.8px 22.4px; position:relative;\"><span style=\"position:absolute; left:0; color:#c8922a; font-weight:700;\">✓</span>Structural feedback</li><li style=\"font-size:14.1px; color:#475569; padding:4.8px 0 4.8px 22.4px; position:relative;\"><span style=\"position:absolute; left:0; color:#c8922a; font-weight:700;\">✓</span>Readiness guidance</li><li style=\"font-size:14.1px; color:#475569; padding:4.8px 0 4.8px 22.4px; position:relative;\"><span style=\"position:absolute; left:0; color:#c8922a; font-weight:700;\">✓</span>Next-step recommendations</li></ul><a href=\"https://calendly.com/ghncomms/personal-narrative-triage-session45-min\" target=\"_blank\" rel=\"noopener\" style=\"width:100%; margin-top:auto; display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; letter-spacing:0.3px; text-decoration:none; border:none; cursor:pointer; background:#c8922a; color:#0b2545;\">Book Triage Session</a></div>"
+                  },
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "session-card-2",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "<div style=\"border:1px solid #e2e8f0; border-radius:12px; padding:32px; background:#f8fafc; display:flex; flex-direction:column;\" onmouseover=\"this.style.borderColor='#c8922a'; this.style.boxShadow='0 6px 20px rgba(200,146,42,.14)';\" onmouseout=\"this.style.borderColor='#e2e8f0'; this.style.boxShadow='none';\"><div style=\"font-family:Montserrat; font-size:10.9px; font-weight:700; color:#c8922a; text-transform:uppercase; letter-spacing:3.2px; margin-bottom:7.2px;\">90 Minutes</div><h4 style=\"font-size:17.6px; color:#0b2545; margin-bottom:8px; font-family:Montserrat; font-weight:700;\">Personal Narrative Strategy &amp; Development Intensive</h4><div style=\"font-family:Montserrat; font-size:32px; font-weight:800; color:#c8922a; margin-bottom:16px;\">$759</div><p style=\"font-size:14.1px; color:#475569; line-height:1.65; margin-bottom:16px; flex:1;\">A private working session for owners who have not yet structured their narrative or need guided, step-by-step development support. We work together to identify and structure the qualifying event, clarify the impediment, articulate the resulting economic impact, and develop a clear, organized draft.</p><a href=\"https://calendly.com/ghncomms/pn-strategy-development-intensive-90-min\" target=\"_blank\" rel=\"noopener\" style=\"width:100%; margin-top:auto; display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; letter-spacing:0.3px; text-decoration:none; border:none; cursor:pointer; background:#0b2545; color:#fff;\">Book Development Intensive Session</a></div>"
+                  },
+                  "widgetType": "text-editor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "section-webinars",
+          "elType": "section",
+          "settings": {
+            "padding": {
+              "unit": "px",
+              "top": 0,
+              "right": 0,
+              "bottom": 64,
+              "left": 0,
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "col-webinar-header",
+              "elType": "column",
+              "settings": {
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "webinar-block-header",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "<div style=\"display:flex; align-items:center; gap:14.4px; padding-bottom:17.6px; margin-bottom:22.4px; border-bottom:2px solid #f1f5f9;\"><div style=\"width:44px; height:44px; background:#0b2545; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:18.4px; flex-shrink:0;\">🎓</div><h3 style=\"font-size:20px; color:#0b2545; font-family:Montserrat; font-weight:700; margin:0;\">Free Educational Webinars</h3></div>"
+                  },
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "webinar-intro",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "High-level educational sessions designed to help DBE/ACDBE business owners better understand the Personal Narrative requirement and reevaluation process.",
+                    "text_color": "#475569",
+                    "typography_font_size": {"unit": "px", "size": 15.2},
+                    "line_height": "1.7",
+                    "margin": {"unit": "px", "bottom": 24}
+                  },
+                  "widgetType": "text-editor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "section-events",
+          "elType": "section",
+          "settings": {
+            "padding": {
+              "unit": "px",
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0,
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "col-events-header",
+              "elType": "column",
+              "settings": {
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "events-block-header",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "<div style=\"display:flex; align-items:center; gap:14.4px; padding-bottom:17.6px; margin-bottom:22.4px; border-bottom:2px solid #f1f5f9;\"><div style=\"width:44px; height:44px; background:#0b2545; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:18.4px; flex-shrink:0;\">📍</div><h3 style=\"font-size:20px; color:#0b2545; font-family:Montserrat; font-weight:700; margin:0;\">In-Person Readiness Sessions &amp; Summits</h3></div>"
+                  },
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "events-intro",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "Live, facilitator-led readiness sessions designed to provide structured guidance and practical working support for DBE/ACDBE business owners navigating reevaluation.",
+                    "text_color": "#475569",
+                    "typography_font_size": {"unit": "px", "size": 15.2},
+                    "line_height": "1.7",
+                    "margin": {"unit": "px", "bottom": 24}
+                  },
+                  "widgetType": "text-editor"
+                },
+                {
+                  "id": "summit-card",
+                  "elType": "widget",
+                  "settings": {
+                    "text": "<div style=\"background:linear-gradient(135deg, #0b2545 0%, #1a3a6b 100%); border-radius:14px; padding:44px; color:#fff; position:relative; overflow:hidden; display:grid; grid-template-columns:1fr auto; gap:32px; align-items:start;\"><div><span style=\"display:inline-block; background:#c8922a; color:#0b2545; font-family:Montserrat; font-size:10.4px; font-weight:700; text-transform:uppercase; letter-spacing:2.4px; padding:4.5px 12px; border-radius:3px; margin-bottom:14.4px;\">In-Person Event</span><h4 style=\"font-size:23.2px; color:#fff; margin-bottom:16px; font-family:Montserrat; font-weight:700;\">South Florida Personal Narrative Readiness Summit</h4><div style=\"margin-bottom:16px; display:flex; flex-direction:column; gap:6.4px;\"><div style=\"display:flex; align-items:center; gap:8px; font-size:14.1px; color:rgba(255,255,255,.8);\"><span>📍</span><span>Alan B. Levan | NSU Broward Center of Innovation</span></div><div style=\"display:flex; align-items:center; gap:8px; font-size:14.1px; color:rgba(255,255,255,.8);\"><span>📅</span><span>June 2, 2026</span></div></div><p style=\"font-size:14.1px; color:rgba(255,255,255,.72); line-height:1.7; margin-bottom:12px;\">A hands-on working session designed to help business owners develop their Personal Narrative, organize supporting information, and improve reevaluation submission readiness through practical guidance.</p><p style=\"font-size:14.1px; color:rgba(255,255,255,.72); line-height:1.7; margin-bottom:0;\">The summit is composed of two small-group intensive working sessions designed to maximize participant interaction and hands-on support.</p></div><div style=\"align-self:center; flex-shrink:0;\"><a href=\"summit.html\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; text-decoration:none; border:none; cursor:pointer; background:#c8922a; color:#0b2545;\">Learn More &amp; Register</a></div></div>"
+                  },
+                  "widgetType": "text-editor"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-testimonials",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#0b2545",
+        "padding": {
+          "unit": "px",
+          "top": 88,
+          "right": 32,
+          "bottom": 88,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-testimonials-header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "text_align": "center"
+          },
+          "elements": [
+            {
+              "id": "testimonials-label",
+              "elType": "widget",
+              "settings": {
+                "text": "TESTIMONIALS",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 11},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 3},
+                "text_transform": "uppercase"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "testimonials-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "What Business Owners Are Saying",
+                "heading_title": "h2",
+                "title_color": "#fff",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "bottom": 48}
+              },
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "col-testimonials",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "testimonial-grid",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:20px; max-width:1200px; margin:0 auto 32px;\"><div style=\"background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.1); border-radius:12px; padding:29.6px; transition:all 0.2s; display:flex; flex-direction:column;\"><div style=\"font-family:Georgia,serif; font-size:40px; color:#c8922a; line-height:0.7; margin-bottom:14.4px;\">&quot;</div><p style=\"font-size:14.1px; color:rgba(255,255,255,.82); line-height:1.72; font-style:italic; flex:1; margin-bottom:22.4px;\">The difference before and after the session was day and night. Following submission, my DBE renewal was approved within two business days.</p><div><div style=\"font-family:Montserrat; font-size:14.1px; font-weight:700; color:#fff;\">Jun Ma, President</div><div style=\"font-size:12.5px; color:rgba(255,255,255,.52);\">JUNMA Engineering PLLC</div></div></div></div>"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "testimonial-disclaimer",
+              "elType": "widget",
+              "settings": {
+                "text": "Testimonials reflect individual experiences. Final certification and reevaluation decisions are determined solely by the appropriate certifying authority.",
+                "text_color": "rgba(255,255,255,.35)",
+                "text_align": "center",
+                "typography_font_size": {"unit": "px", "size": 12.2},
+                "typography_font_style": "italic",
+                "line_height": "1.6"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-disclaimer",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#071830",
+        "padding": {
+          "unit": "px",
+          "top": 48,
+          "right": 32,
+          "bottom": 48,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-disclaimer",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "disclaimer-label",
+              "elType": "widget",
+              "settings": {
+                "text": "IMPORTANT DISCLAIMER",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 10.4},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 4},
+                "text_transform": "uppercase",
+                "margin": {"unit": "px", "bottom": 14.4}
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "disclaimer-body",
+              "elType": "widget",
+              "settings": {
+                "text": "<p style=\"font-size:12.8px; color:rgba(255,255,255,.42); line-height:1.75; margin-bottom:11.2px;\">GHN Communications is an independent strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement. GHN Communications is not affiliated with, endorsed by, or acting on behalf of any federal, state, or local government agency.</p><p style=\"font-size:12.8px; color:rgba(255,255,255,.42); line-height:1.75; margin-bottom:11.2px;\">GHN Communications does not provide legal advice, determine eligibility, interpret regulations, or guarantee DBE/ACDBE certification, recertification, or approval outcomes. All certification and reevaluation decisions are made solely by the appropriate certifying authority.</p><p style=\"font-size:12.8px; color:rgba(255,255,255,.42); line-height:1.75;\">All Personal Narrative content, supporting facts, documentation, and final submission decisions remain the responsibility of the business owner.</p>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-final-cta",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#f8fafc",
+        "padding": {
+          "unit": "px",
+          "top": 88,
+          "right": 32,
+          "bottom": 88,
+          "left": 32,
+          "isLinked": false
+        },
+        "text_align": "center"
+      },
+      "elements": [
+        {
+          "id": "col-final-cta",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "max_width": {
+              "unit": "px",
+              "size": 1088
+            }
+          },
+          "elements": [
+            {
+              "id": "final-label",
+              "elType": "widget",
+              "settings": {
+                "text": "TAKE THE NEXT STEP",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 11},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 3},
+                "text_transform": "uppercase",
+                "text_align": "center"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "final-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "Get the Guidance and Clarity You Need to Move Forward",
+                "heading_title": "h2",
+                "title_color": "#0b2545",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 35.2},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "bottom": 16}
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "final-desc",
+              "elType": "widget",
+              "settings": {
+                "text": "Whether you are starting from scratch or refining an existing draft, GHN Communications is here to support your readiness.",
+                "text_color": "#475569",
+                "typography_font_size": {"unit": "px", "size": 16},
+                "line_height": "1.7",
+                "margin": {"unit": "px", "bottom": 36}
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "final-ctas",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"display:flex; flex-wrap:wrap; justify-content:center; gap:12px;\"><a href=\"#session\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; text-decoration:none; border:none; cursor:pointer; background:#c8922a; color:#0b2545;\">Book Individualized Session</a><a href=\"#webinar\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; text-decoration:none; border:none; cursor:pointer; background:#0b2545; color:#fff;\">Register for Free Webinar</a><a href=\"#events\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; text-decoration:none; border:none; cursor:pointer; background:#0b2545; color:#fff;\">View In-Person Events</a><a href=\"#resources\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:12.8px 25.6px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:13.6px; text-decoration:none; border:2px solid #0b2545; cursor:pointer; background:transparent; color:#0b2545;\">Resources</a></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-footer",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#0b2545",
+        "padding": {
+          "unit": "px",
+          "top": 48,
+          "right": 32,
+          "bottom": 32,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-footer",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "footer-content",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; padding-bottom:32px; border-bottom:1px solid rgba(255,255,255,.1); margin-bottom:24px;\"><div><a href=\"index.html\" style=\"display:flex; align-items:center; gap:11.2px; text-decoration:none; margin-bottom:14.4px;\"><div style=\"width:42px; height:42px; background:#c8922a; border-radius:6px; display:flex; align-items:center; justify-content:center; font-family:Montserrat; font-weight:800; font-size:1rem; color:#0b2545;\">GHN</div><div style=\"display:flex; flex-direction:column; line-height:1.1;\"><span style=\"font-family:Montserrat; font-weight:700; font-size:1rem; color:#fff; letter-spacing:2px;\">GHN</span><span style=\"font-family:Montserrat; font-size:0.55rem; font-weight:600; color:#c8922a; letter-spacing:3px; text-transform:uppercase;\">Communications</span></div></a><p style=\"font-size:13.1px; color:rgba(255,255,255,.45); line-height:1.65; margin-top:16px; max-width:280px;\">Strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement.</p></div><div><h4 style=\"font-family:Montserrat; font-size:10.9px; font-weight:700; text-transform:uppercase; letter-spacing:3.2px; color:#c8922a; margin-bottom:16px;\">Services</h4><a href=\"#session\" style=\"display:block; font-size:13.6px; color:rgba(255,255,255,.6); text-decoration:none; margin-bottom:6.4px; transition:color 0.15s;\">Triage Session – $300</a><a href=\"#session\" style=\"display:block; font-size:13.6px; color:rgba(255,255,255,.6); text-decoration:none; margin-bottom:6.4px; transition:color 0.15s;\">Development Intensive – $759</a><a href=\"#webinar\" style=\"display:block; font-size:13.6px; color:rgba(255,255,255,.6); text-decoration:none; margin-bottom:6.4px; transition:color 0.15s;\">Free Webinars</a><a href=\"#events\" style=\"display:block; font-size:13.6px; color:rgba(255,255,255,.6); text-decoration:none; margin-bottom:6.4px; transition:color 0.15s;\">In-Person Events</a><a href=\"#resources\" style=\"display:block; font-size:13.6px; color:rgba(255,255,255,.6); text-decoration:none; transition:color 0.15s;\">Resources</a></div><div><h4 style=\"font-family:Montserrat; font-size:10.9px; font-weight:700; text-transform:uppercase; letter-spacing:3.2px; color:#c8922a; margin-bottom:16px;\">Contact</h4><p style=\"display:block; font-size:13.6px; color:rgba(255,255,255,.6); margin-bottom:6.4px;\">GHN Communications Admin Team</p><a href=\"mailto:admin@ghncomms.com\" style=\"display:block; font-size:13.6px; color:rgba(255,255,255,.6); text-decoration:none; margin-bottom:6.4px; transition:color 0.15s;\">admin@ghncomms.com</a><a href=\"tel:8562782182\" style=\"display:block; font-size:13.6px; color:rgba(255,255,255,.6); text-decoration:none; transition:color 0.15s;\">856-278-2182</a></div></div><div style=\"max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;\"><p style=\"font-size:12.2px; color:rgba(255,255,255,.28);\">&copy; 2026 GHN Communications. All rights reserved.</p><div style=\"display:flex; align-items:center; gap:9.6px; font-size:11.5px; color:rgba(255,255,255,.3);\">Produced by<div style=\"display:flex; align-items:center; gap:6.4px;\"><div style=\"width:26px; height:26px; background:#c8922a; border-radius:4px; display:flex; align-items:center; justify-content:center; font-family:Montserrat; font-size:9.3px; font-weight:800; color:#0b2545;\">GHN</div><span style=\"font-family:Montserrat; font-size:10.4px; font-weight:700; color:rgba(255,255,255,.5); letter-spacing:2.4px;\">GHN COMMUNICATIONS</span></div></div></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

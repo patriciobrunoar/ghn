@@ -1,0 +1,652 @@
+{
+  "version": "0.4",
+  "title": "South Florida Personal Narrative Readiness Summit | GHN Communications",
+  "type": "page",
+  "settings": {
+    "post_title": "South Florida Personal Narrative Readiness Summit | GHN Communications",
+    "post_status": "publish"
+  },
+  "elements": [
+    {
+      "id": "section-nav",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#0b2545",
+        "padding": {
+          "unit": "px",
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "isLinked": false
+        },
+        "position": "sticky",
+        "sticky": "top",
+        "min_height": {
+          "unit": "px",
+          "size": 70
+        },
+        "box_shadow": "0 2px 12px rgba(0,0,0,.3)"
+      },
+      "elements": [
+        {
+          "id": "col-nav",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": 0,
+              "right": 32,
+              "bottom": 0,
+              "left": 32,
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "nav-logo",
+              "elType": "widget",
+              "settings": {
+                "text": "<a href=\"index.html\" style=\"display:flex; align-items:center; gap:0.7rem; text-decoration:none;\" aria-label=\"GHN Communications – Home\"><div style=\"width:42px; height:42px; background:#c8922a; border-radius:6px; display:flex; align-items:center; justify-content:center; font-family:Montserrat; font-weight:800; font-size:1rem; color:#0b2545; letter-spacing:-0.5px;\">GHN</div><div style=\"display:flex; flex-direction:column; line-height:1.1;\"><span style=\"font-family:Montserrat; font-weight:700; font-size:1rem; color:#fff; letter-spacing:2px;\">GHN</span><span style=\"font-family:Montserrat; font-size:0.55rem; font-weight:600; color:#c8922a; letter-spacing:3px; text-transform:uppercase;\">Communications</span></div></a><a href=\"index.html\" style=\"margin-left:auto; color:rgba(255,255,255,.7); font-size:13.1px; font-weight:500; text-decoration:none; display:flex; align-items:center; gap:6.4px; padding:6.4px 12.8px; border-radius:4px; transition:all 0.15s;\">← Back to Readiness Hub</a>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-hero",
+      "elType": "section",
+      "settings": {
+        "background_background": "gradient",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": 135,
+        "background_gradient_stops": [
+          {"unit": "%", "position": 0, "color": "rgb(7, 24, 48)"},
+          {"unit": "%", "position": 45, "color": "rgb(11, 37, 69)"},
+          {"unit": "%", "position": 100, "color": "rgb(21, 61, 120)"}
+        ],
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 32,
+          "bottom": 0,
+          "left": 32,
+          "isLinked": false
+        },
+        "overflow": "hidden"
+      },
+      "elements": [
+        {
+          "id": "col-hero-text",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "padding": {
+              "unit": "px",
+              "bottom": 56
+            }
+          },
+          "elements": [
+            {
+              "id": "hero-pill",
+              "elType": "widget",
+              "settings": {
+                "text": "📍 In-Person Event &nbsp;·&nbsp; South Florida"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "hero-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "South Florida<br /><span style=\"color:#c8922a;\">Personal Narrative</span><br />Readiness Summit",
+                "heading_title": "h1",
+                "title_color": "#fff",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 45.6},
+                "typography_font_weight": "800",
+                "max_width": {"unit": "px", "size": 1088},
+                "line_height": "1.15",
+                "margin": {"unit": "px", "bottom": 24}
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "hero-meta",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"display:flex; flex-direction:column; gap:9.6px; margin-bottom:32px;\"><div style=\"display:flex; align-items:flex-start; gap:10.4px; font-size:15.2px; color:rgba(255,255,255,.82);\"><span style=\"font-size:16.8px; flex-shrink:0; margin-top:0.8px;\">📅</span><span><strong style=\"color:#fff;\">June 2, 2026</strong></span></div><div style=\"display:flex; align-items:flex-start; gap:10.4px; font-size:15.2px; color:rgba(255,255,255,.82);\"><span style=\"font-size:16.8px; flex-shrink:0; margin-top:0.8px;\">📍</span><span><strong style=\"color:#fff;\">Alan B. Levan | NSU Broward Center of Innovation</strong><br />Fort Lauderdale, Florida</span></div><div style=\"display:flex; align-items:flex-start; gap:10.4px; font-size:15.2px; color:rgba(255,255,255,.82);\"><span style=\"font-size:16.8px; flex-shrink:0; margin-top:0.8px;\">👥</span><span>Small-group intensive working sessions — limited capacity</span></div></div>"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "hero-ctas",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"display:flex; flex-wrap:wrap; gap:12px;\"><a href=\"#register\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:16px 36px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:15.2px; text-decoration:none; border:none; cursor:pointer; background:#c8922a; color:#0b2545;\">Register Now</a><a href=\"#about\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:16px 36px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:15.2px; text-decoration:none; border:2px solid rgba(255,255,255,.65); cursor:pointer; background:transparent; color:#fff;\">Learn More</a></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "col-hero-card",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "padding": {
+              "unit": "px",
+              "bottom": 0
+            }
+          },
+          "elements": [
+            {
+              "id": "register-card",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"background:#fff; border-radius:14px; padding:36px 32px; width:100%; max-width:300px; box-shadow:0 12px 40px rgba(0,0,0,.28);\"><div style=\"font-family:Montserrat; font-size:10.4px; font-weight:700; text-transform:uppercase; letter-spacing:3.2px; color:#c8922a; margin-bottom:9.6px;\">Event Registration</div><div style=\"font-family:Montserrat; font-size:20px; font-weight:800; color:#0b2545; margin-bottom:4.8px;\">Readiness Summit</div><div style=\"font-size:14.1px; color:#64748b; margin-bottom:20px;\">June 2, 2026 &nbsp;·&nbsp; Fort Lauderdale, FL</div><hr style=\"border:none; border-top:1px solid #e2e8f0; margin:20px 0;\"><div style=\"display:flex; align-items:flex-start; gap:8.8px; font-size:13.3px; color:#475569; margin-bottom:10.4px;\"><span>📍</span><span>Alan B. Levan | NSU Broward Center of Innovation, Fort Lauderdale, FL</span></div><div style=\"display:flex; align-items:flex-start; gap:8.8px; font-size:13.3px; color:#475569; margin-bottom:10.4px;\"><span>📅</span><span>June 2, 2026</span></div><div style=\"display:flex; align-items:flex-start; gap:8.8px; font-size:13.3px; color:#475569; margin-bottom:10.4px;\"><span>👥</span><span>Small-group intensive format — seats are limited</span></div><div style=\"display:flex; align-items:flex-start; gap:8.8px; font-size:13.3px; color:#475569; margin-bottom:20px;\"><span>✅</span><span>DBE/ACDBE business owners navigating reevaluation</span></div><a href=\"mailto:admin@ghncomms.com?subject=South%20Florida%20Summit%20Registration%20-%20June%202%2C%202026\" style=\"width:100%; display:inline-flex; align-items:center; justify-content:center; padding:13.6px 28px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:14.1px; text-decoration:none; border:none; cursor:pointer; background:#c8922a; color:#0b2545; margin-top:20px;\">Reserve Your Spot</a><p style=\"font-size:12px; color:#64748b; text-align:center; margin-top:12px; line-height:1.45;\">Contact us at admin@ghncomms.com or call 856-278-2182 to confirm availability.</p></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-about",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#fff",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 32,
+          "bottom": 80,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-about-text",
+          "elType": "column",
+          "settings": {
+            "_column_size": 60
+          },
+          "elements": [
+            {
+              "id": "about-label",
+              "elType": "widget",
+              "settings": {
+                "text": "ABOUT THE SUMMIT",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 10.9},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 3},
+                "text_transform": "uppercase"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "about-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "Hands-On Readiness Support, Together",
+                "heading_title": "h2",
+                "title_color": "#0b2545",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "bottom": 16}
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "about-para1",
+              "elType": "widget",
+              "settings": {
+                "text": "The South Florida Personal Narrative Readiness Summit is a facilitator-led, hands-on working event designed to help DBE and ACDBE business owners develop their Personal Narrative, organize supporting information, and improve reevaluation submission readiness through practical, structured guidance.",
+                "text_color": "#475569",
+                "typography_font_size": {"unit": "px", "size": 15.5},
+                "line_height": "1.75",
+                "margin": {"unit": "px", "bottom": 16}
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "about-para2",
+              "elType": "widget",
+              "settings": {
+                "text": "Unlike a traditional seminar or webinar, this is a working session. Participants will leave with a clearer narrative, organized supporting facts, and greater confidence about their reevaluation submission — not just a better understanding of the process.",
+                "text_color": "#475569",
+                "typography_font_size": {"unit": "px", "size": 15.5},
+                "line_height": "1.75",
+                "margin": {"unit": "px", "bottom": 16}
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "about-para3",
+              "elType": "widget",
+              "settings": {
+                "text": "GHN Communications brings the same one-on-one strategic guidance methodology used in individualized sessions into a small-group format — maximizing both the depth of support and the breadth of peer learning.",
+                "text_color": "#475569",
+                "typography_font_size": {"unit": "px", "size": 15.5},
+                "line_height": "1.75"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "col-about-structure",
+          "elType": "column",
+          "settings": {
+            "_column_size": 40
+          },
+          "elements": [
+            {
+              "id": "structure-title",
+              "elType": "widget",
+              "settings": {
+                "text": "Summit Structure",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 15.2},
+                "typography_font_weight": "700",
+                "text_color": "#0b2545",
+                "margin": {"unit": "px", "bottom": 16}
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "session-block-1",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:22.4px; margin-bottom:13.6px; border-left:4px solid #c8922a;\"><div style=\"font-family:Montserrat; font-size:10.4px; font-weight:700; color:#c8922a; text-transform:uppercase; letter-spacing:2.4px; margin-bottom:4.8px;\">Working Session 1</div><h4 style=\"font-size:15.2px; color:#0b2545; margin-bottom:4.8px; font-family:Montserrat; font-weight:700;\">Narrative Foundation &amp; Qualifying Event Development</h4><p style=\"font-size:13.3px; color:#475569; line-height:1.6; margin:0;\">Guided small-group work to identify and structure the qualifying event, clarify the personal impediment, and establish the narrative foundation for your Personal Narrative.</p></div>"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "session-block-2",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:22.4px; border-left:4px solid #c8922a;\"><div style=\"font-family:Montserrat; font-size:10.4px; font-weight:700; color:#c8922a; text-transform:uppercase; letter-spacing:2.4px; margin-bottom:4.8px;\">Working Session 2</div><h4 style=\"font-size:15.2px; color:#0b2545; margin-bottom:4.8px; font-family:Montserrat; font-weight:700;\">Economic Impact &amp; Submission Readiness Review</h4><p style=\"font-size:13.3px; color:#475569; line-height:1.6; margin:0;\">Deep dive into articulating the resulting economic impact, strengthening narrative clarity, and preparing your draft for submission — with direct facilitator feedback.</p></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-attend",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#f8fafc",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 32,
+          "bottom": 80,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-attend-header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "attend-label",
+              "elType": "widget",
+              "settings": {
+                "text": "WHO SHOULD ATTEND",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 10.9},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 3},
+                "text_transform": "uppercase"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "attend-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "This Summit Is Designed For",
+                "heading_title": "h2",
+                "title_color": "#0b2545",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "bottom": 36}
+              },
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "col-attend-cards",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "attend-card-grid",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px;\"><div style=\"background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:24px; transition:all 0.2s;\"><div style=\"font-size:25.6px; margin-bottom:10.4px;\">📄</div><h4 style=\"font-size:15.2px; color:#0b2545; margin-bottom:6.4px; font-family:Montserrat; font-weight:700;\">Business Owners Without a Draft</h4><p style=\"font-size:13.1px; color:#475569; line-height:1.55;\">If you have not yet begun writing your Personal Narrative, this summit will help you build from the ground up with structured facilitation.</p></div><div style=\"background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:24px; transition:all 0.2s;\"><div style=\"font-size:25.6px; margin-bottom:10.4px;\">✏️</div><h4 style=\"font-size:15.2px; color:#0b2545; margin-bottom:6.4px; font-family:Montserrat; font-weight:700;\">Business Owners With an Early Draft</h4><p style=\"font-size:13.1px; color:#475569; line-height:1.55;\">If you have a rough draft but feel uncertain about structure, clarity, or completeness, the summit will help you strengthen and organize your narrative.</p></div><div style=\"background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:24px; transition:all 0.2s;\"><div style=\"font-size:25.6px; margin-bottom:10.4px;\">❓</div><h4 style=\"font-size:15.2px; color:#0b2545; margin-bottom:6.4px; font-family:Montserrat; font-weight:700;\">Owners Unclear on Requirements</h4><p style=\"font-size:13.1px; color:#475569; line-height:1.55;\">If the new DOT Personal Narrative requirements feel confusing or overwhelming, the summit provides practical, plain-language guidance on what is needed and why.</p></div><div style=\"background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:24px; transition:all 0.2s;\"><div style=\"font-size:25.6px; margin-bottom:10.4px;\">📋</div><h4 style=\"font-size:15.2px; color:#0b2545; margin-bottom:6.4px; font-family:Montserrat; font-weight:700;\">DBE &amp; ACDBE Certified Business Owners</h4><p style=\"font-size:13.1px; color:#475569; line-height:1.55;\">The summit is specifically designed for current DBE and ACDBE certified business owners navigating the reevaluation process under updated DOT requirements.</p></div></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-gain",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#0b2545",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 32,
+          "bottom": 80,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-gain-header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "gain-label",
+              "elType": "widget",
+              "settings": {
+                "text": "WHAT YOU WILL GAIN",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 10.9},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 3},
+                "text_transform": "uppercase"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "gain-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "Leave With More Than Knowledge",
+                "heading_title": "h2",
+                "title_color": "#fff",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 34.4},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "bottom": 40}
+              },
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "col-gain-cards",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "gain-card-grid",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;\"><div style=\"background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); border-radius:10px; padding:24px; transition:all 0.2s;\"><div style=\"font-family:Montserrat; font-size:32px; font-weight:800; color:#c8922a; margin-bottom:5.6px;\">01</div><h4 style=\"font-size:15.2px; color:#fff; margin-bottom:6.4px; font-family:Montserrat; font-weight:700;\">A Structured Qualifying Event</h4><p style=\"font-size:13.1px; color:rgba(255,255,255,.62); line-height:1.55;\">Your qualifying event identified, framed, and structured in a way that supports a strong Personal Narrative.</p></div><div style=\"background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); border-radius:10px; padding:24px; transition:all 0.2s;\"><div style=\"font-family:Montserrat; font-size:32px; font-weight:800; color:#c8922a; margin-bottom:5.6px;\">02</div><h4 style=\"font-size:15.2px; color:#fff; margin-bottom:6.4px; font-family:Montserrat; font-weight:700;\">A Clearer Narrative Draft</h4><p style=\"font-size:13.1px; color:rgba(255,255,255,.62); line-height:1.55;\">A more organized, clear, and complete narrative draft that reflects the depth and specificity the reevaluation process requires.</p></div><div style=\"background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); border-radius:10px; padding:24px; transition:all 0.2s;\"><div style=\"font-family:Montserrat; font-size:32px; font-weight:800; color:#c8922a; margin-bottom:5.6px;\">03</div><h4 style=\"font-size:15.2px; color:#fff; margin-bottom:6.4px; font-family:Montserrat; font-weight:700;\">Direct Facilitator Feedback</h4><p style=\"font-size:13.1px; color:rgba(255,255,255,.62); line-height:1.55;\">Real-time, constructive feedback from an experienced GHN Communications facilitator in a small-group setting.</p></div><div style=\"background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); border-radius:10px; padding:24px; transition:all 0.2s;\"><div style=\"font-family:Montserrat; font-size:32px; font-weight:800; color:#c8922a; margin-bottom:5.6px;\">04</div><h4 style=\"font-size:15.2px; color:#fff; margin-bottom:6.4px; font-family:Montserrat; font-weight:700;\">Submission Readiness</h4><p style=\"font-size:13.1px; color:rgba(255,255,255,.62); line-height:1.55;\">Greater confidence, clearer next steps, and a stronger foundation for your reevaluation submission.</p></div></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-venue",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#fff",
+        "padding": {
+          "unit": "px",
+          "top": 80,
+          "right": 32,
+          "bottom": 80,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-venue-header",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "venue-label",
+              "elType": "widget",
+              "settings": {
+                "text": "VENUE",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 10.9},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 3},
+                "text_transform": "uppercase"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "venue-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "Event Location",
+                "heading_title": "h2",
+                "title_color": "#0b2545",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "bottom": 36}
+              },
+              "widgetType": "heading"
+            }
+          ]
+        },
+        {
+          "id": "col-venue-info",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "venue-details",
+              "elType": "widget",
+              "settings": {
+                "text": "<h3 style=\"font-size:20.8px; color:#0b2545; margin-bottom:16px; font-family:Montserrat; font-weight:700;\">Alan B. Levan | NSU Broward Center of Innovation</h3><div style=\"display:flex; align-items:flex-start; gap:10.4px; font-size:14.4px; color:#475569; margin-bottom:12px;\"><span style=\"flex-shrink:0; font-size:17.6px; margin-top:0.8px;\">📍</span><span>Alan B. Levan | NSU Broward Center of Innovation<br />Fort Lauderdale, Florida</span></div><div style=\"display:flex; align-items:flex-start; gap:10.4px; font-size:14.4px; color:#475569; margin-bottom:12px;\"><span style=\"flex-shrink:0; font-size:17.6px; margin-top:0.8px;\">📅</span><span>Monday, June 2, 2026</span></div><div style=\"display:flex; align-items:flex-start; gap:10.4px; font-size:14.4px; color:#475569; margin-bottom:12px;\"><span style=\"flex-shrink:0; font-size:17.6px; margin-top:0.8px;\">ℹ️</span><span>A state-of-the-art innovation hub at Nova Southeastern University, providing a professional, collaborative environment for focused working sessions.</span></div><div style=\"display:flex; align-items:flex-start; gap:10.4px; font-size:14.4px; color:#475569; margin-bottom:32px;\"><span style=\"flex-shrink:0; font-size:17.6px; margin-top:0.8px;\">🚗</span><span>Parking available on-site. Detailed directions will be provided upon registration confirmation.</span></div><a href=\"mailto:admin@ghncomms.com?subject=Summit%20Venue%20Questions\" style=\"font-size:14.1px; color:#1a56db; text-decoration:none; font-weight:600;\">Contact us for venue details →</a>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        },
+        {
+          "id": "col-venue-map",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "venue-map-placeholder",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"background:#f1f5f9; border-radius:12px; overflow:hidden; aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; color:#64748b; font-size:13.6px; border:1px solid #e2e8f0; text-align:center; padding:32px; flex-direction:column; gap:12px;\"><div style=\"font-size:40px;\">🗺️</div><p style=\"font-weight:600; color:#475569; margin:0;\">Alan B. Levan | NSU Broward Center of Innovation</p><p style=\"font-size:13.1px; color:#64748b; margin:0;\">Fort Lauderdale, Florida</p><p style=\"font-size:12.5px; color:#94a3b8; margin-top:8px; margin-bottom:0;\">Detailed directions provided upon registration.</p></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-register",
+      "elType": "section",
+      "settings": {
+        "background_background": "gradient",
+        "background_gradient_type": "linear",
+        "background_gradient_angle": 135,
+        "background_gradient_stops": [
+          {"unit": "%", "position": 0, "color": "rgb(11, 37, 69)"},
+          {"unit": "%", "position": 100, "color": "rgb(26, 58, 107)"}
+        ],
+        "padding": {
+          "unit": "px",
+          "top": 88,
+          "right": 32,
+          "bottom": 88,
+          "left": 32,
+          "isLinked": false
+        },
+        "text_align": "center",
+        "overflow": "hidden"
+      },
+      "elements": [
+        {
+          "id": "col-register",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "max_width": {"unit": "px", "size": 960}
+          },
+          "elements": [
+            {
+              "id": "register-label",
+              "elType": "widget",
+              "settings": {
+                "text": "REGISTER",
+                "title_color": "#c8922a",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 10.9},
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {"unit": "px", "size": 3},
+                "text_transform": "uppercase",
+                "text_align": "center"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "register-title",
+              "elType": "widget",
+              "settings": {
+                "editor": "Secure Your Spot at the Summit",
+                "heading_title": "h2",
+                "title_color": "#fff",
+                "typography_font_family": "Montserrat",
+                "typography_font_size": {"unit": "px", "size": 36},
+                "typography_font_weight": "700",
+                "margin": {"unit": "px", "bottom": 13.6}
+              },
+              "widgetType": "heading"
+            },
+            {
+              "id": "register-desc",
+              "elType": "widget",
+              "settings": {
+                "text": "Space is limited to ensure every participant receives meaningful, hands-on support. Reserve your place today and take a concrete step toward reevaluation submission readiness.",
+                "text_color": "rgba(255,255,255,.72)",
+                "typography_font_size": {"unit": "px", "size": 15.5},
+                "line_height": "1.7",
+                "margin": {"unit": "px", "bottom": 32}
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "register-ctas",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"display:flex; flex-wrap:wrap; gap:12px; justify-content:center;\"><a href=\"mailto:admin@ghncomms.com?subject=South%20Florida%20Summit%20Registration%20-%20June%202%2C%202026\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:16px 36px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:15.2px; text-decoration:none; border:none; cursor:pointer; background:#c8922a; color:#0b2545;\">Reserve My Spot – Email Us</a><a href=\"tel:8562782182\" style=\"display:inline-flex; align-items:center; justify-content:center; padding:16px 36px; border-radius:6px; font-family:Montserrat; font-weight:700; font-size:15.2px; text-decoration:none; border:2px solid rgba(255,255,255,.65); cursor:pointer; background:transparent; color:#fff;\">Call 856-278-2182</a></div>"
+              },
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "register-fine",
+              "elType": "widget",
+              "settings": {
+                "text": "GHN Communications Admin Team will confirm availability and provide all details. This is a limited-capacity event.",
+                "text_color": "rgba(255,255,255,.38)",
+                "typography_font_size": {"unit": "px", "size": 12.5},
+                "line_height": "1.6",
+                "margin": {"unit": "px", "top": 24}
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-footer",
+      "elType": "section",
+      "settings": {
+        "background_background": "solid",
+        "background_color": "#071830",
+        "padding": {
+          "unit": "px",
+          "top": 48,
+          "right": 32,
+          "bottom": 32,
+          "left": 32,
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "col-footer",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "footer-content",
+              "elType": "widget",
+              "settings": {
+                "text": "<div style=\"max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; padding-bottom:32px; border-bottom:1px solid rgba(255,255,255,.08); margin-bottom:24px;\"><div><a href=\"index.html\" style=\"display:flex; align-items:center; gap:0.7rem; text-decoration:none; margin-bottom:14.4px;\"><div style=\"width:42px; height:42px; background:#c8922a; border-radius:6px; display:flex; align-items:center; justify-content:center; font-family:Montserrat; font-weight:800; font-size:1rem; color:#0b2545;\">GHN</div><div style=\"display:flex; flex-direction:column; line-height:1.1;\"><span style=\"font-family:Montserrat; font-weight:700; font-size:1rem; color:#fff; letter-spacing:2px;\">GHN</span><span style=\"font-family:Montserrat; font-size:0.55rem; font-weight:600; color:#c8922a; letter-spacing:3px; text-transform:uppercase;\">Communications</span></div></a><p style=\"font-size:13.1px; color:rgba(255,255,255,.42); line-height:1.65; margin-top:14.4px; margin-bottom:0;\">Strategic communications and public relations firm specializing in storytelling, brand narratives, marketing communications, and stakeholder engagement.</p></div><div><h4 style=\"font-family:Montserrat; font-size:10.4px; font-weight:700; text-transform:uppercase; letter-spacing:3.2px; color:#c8922a; margin-bottom:16px;\">Readiness Hub</h4><a href=\"index.html#session\" style=\"display:block; font-size:13.3px; color:rgba(255,255,255,.55); text-decoration:none; margin-bottom:6.1px; transition:color 0.15s;\">Book Individualized Session</a><a href=\"index.html#webinar\" style=\"display:block; font-size:13.3px; color:rgba(255,255,255,.55); text-decoration:none; margin-bottom:6.1px; transition:color 0.15s;\">Free Webinars</a><a href=\"index.html#events\" style=\"display:block; font-size:13.3px; color:rgba(255,255,255,.55); text-decoration:none; margin-bottom:6.1px; transition:color 0.15s;\">In-Person Events</a><a href=\"index.html#resources\" style=\"display:block; font-size:13.3px; color:rgba(255,255,255,.55); text-decoration:none; transition:color 0.15s;\">Resources</a></div><div><h4 style=\"font-family:Montserrat; font-size:10.4px; font-weight:700; text-transform:uppercase; letter-spacing:3.2px; color:#c8922a; margin-bottom:16px;\">Contact</h4><p style=\"display:block; font-size:13.3px; color:rgba(255,255,255,.55); margin-bottom:6.1px;\">GHN Communications Admin Team</p><a href=\"mailto:admin@ghncomms.com\" style=\"display:block; font-size:13.3px; color:rgba(255,255,255,.55); text-decoration:none; margin-bottom:6.1px; transition:color 0.15s;\">admin@ghncomms.com</a><a href=\"tel:8562782182\" style=\"display:block; font-size:13.3px; color:rgba(255,255,255,.55); text-decoration:none; transition:color 0.15s;\">856-278-2182</a></div></div><div style=\"max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;\"><p style=\"font-size:11.8px; color:rgba(255,255,255,.26); margin:0;\">&copy; 2026 GHN Communications. All rights reserved.</p><div style=\"display:flex; align-items:center; gap:8.8px; font-size:11.2px; color:rgba(255,255,255,.28);\">Produced by<div style=\"display:flex; align-items:center; gap:6.1px;\"><div style=\"width:24px; height:24px; background:#c8922a; border-radius:3px; display:flex; align-items:center; justify-content:center; font-family:Montserrat; font-size:8.8px; font-weight:800; color:#0b2545;\">GHN</div><span style=\"font-family:Montserrat; font-size:9.9px; font-weight:700; color:rgba(255,255,255,.45); letter-spacing:2.4px;\">GHN COMMUNICATIONS</span></div></div></div>"
+              },
+              "widgetType": "text-editor"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
